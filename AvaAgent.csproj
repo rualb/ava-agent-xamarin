@@ -1,0 +1,1146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8527B772-61B9-4B84-9F35-7B6B94F8AF65}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AvaAgent</RootNamespace>
+    <AssemblyName>AvaAgent</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidUseLatestPlatformSdk>
+    </AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\binm\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidLinkSkip />
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize>
+    </JavaMaximumHeapSize>
+    <JavaOptions />
+    <MonoDroidExtraArgs />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\binm\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AndroidLinkSkip />
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize />
+    <JavaOptions />
+    <MonoDroidExtraArgs />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\binm\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkSkip />
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize />
+    <JavaOptions />
+    <MonoDroidExtraArgs />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AvaExt\Adapter\Const\AdapterWorkState.cs" />
+    <Compile Include="AvaExt\Adapter\EditingTools.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\AdapterDataSetDocument.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\AdapterDataSetRecords.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\AdapterDataSetSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Admin\Reference\AdapterDataSetFirmParams.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Finance\Operation\Cash\AdapterDataSetCash.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Finance\Operation\Cash\AdapterDataSetCashClient.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Finance\Operation\Cash\AdapterDataSetCashInputClient.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Finance\Operation\Cash\AdapterDataSetCashOutputClient.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Finance\Records\AdapterDataSetClient.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\IAdapterDataSet.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\ImplAdapterDataSet.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\ImplAdapterDataSetStub.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Info\Records\AdapterDataSetInfoDocSave.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Info\Records\AdapterDataSetInfoFirm.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Info\Records\AdapterDataSetInfoPeriod.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Material\Operation\Order\AdapterDataSetWarehouseOrder.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Material\Operation\Order\AdapterDataSetWarehouseOrderCounting.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Material\Operation\Order\AdapterDataSetWarehouseOrderInput.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Material\Operation\Order\AdapterDataSetWarehouseOrderList.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Material\Operation\Order\AdapterDataSetWarehouseOrderOutput.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Material\Operation\Slip\AdapterDataSetDeficitSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Material\Operation\Slip\AdapterDataSetExcessSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Material\Operation\Slip\AdapterDataSetMaterialManagment.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Material\Operation\Slip\AdapterDataSetWarehouse.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Material\Operation\Slip\AdapterDataSetWarehouseSlipInput.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Material\Operation\Slip\AdapterDataSetWarehouseSlipOutput.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Material\Records\AdapterDataSetMaterial.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Material\Records\AdapterDataSetWarehouse.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Purchase\Operation\Order\AdapterDataSetPurchaseOrder.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Purchase\Operation\Order\AdapterDataSetPurchaseReturnOrder.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Purchase\Operation\Slip\AdapterDataSetPurchaseReturnSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Purchase\Operation\Slip\AdapterDataSetPurchaseSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Sale\Operation\Order\AdapterDataSetWholesaleOrder.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Sale\Operation\Order\AdapterDataSetWholesaleReturnOrder.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Sale\Operation\Order\AdapterDataSetZeroOrder.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Sale\Operation\Slip\AdapterDataSetWholesaleReturnSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Sale\Operation\Slip\AdapterDataSetWholesaleSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Sale\Operation\Slip\AdapterDataSetZeroSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataSet\Sale\Reference\AdapterDataSetCampaignCard.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableCampCard.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableCampCardLine.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableCash.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableClient.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableClientPayTrans.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableClientTrans.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableDocNum.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableFirmParams.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableInfoDocSave.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableInfoFirm.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableInfoPeriod.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableInvoice.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableMaterial.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableMaterialTrans.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableMaterialUnits.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableMaterialUnitsBarcode.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableOrder.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableOrderTrans.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableUnit.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableUnitSet.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\AdapterTableWarehouse.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\IAdapterTable.cs" />
+    <Compile Include="AvaExt\Adapter\ForDataTable\ImplAdapterTableExt.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\AdapterUserDocument.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\AdapterUserFlags.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\AdapterUserHeaderedRecords.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\AdapterUserRecords.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\AdapterUserSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\AdapterUserStockDocument.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Admin\Reference\AdapterUserFirmParams.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Finance\Operation\Cash\AdapterUserCash.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Finance\Operation\Cash\AdapterUserCashClient.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Finance\Operation\Cash\AdapterUserCashInputClient.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Finance\Operation\Cash\AdapterUserCashOutputClient.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Finance\Records\AdapterUserClient.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\IAdapterUser.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\ImplAdapterUser.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Info\Records\AdapterUserInfoDocSave.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Info\Records\AdapterUserInfoFirm.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Info\Records\AdapterUserInfoPeriod.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\IUserEditor.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Material\Operation\Order\AdapterUserWarehouseOrder.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Material\Operation\Order\AdapterUserWarehouseOrderCounting.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Material\Operation\Order\AdapterUserWarehouseOrderInput.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Material\Operation\Order\AdapterUserWarehouseOrderList.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Material\Operation\Order\AdapterUserWarehouseOrderOutput.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Material\Operation\Slip\AdapterUserDeficitSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Material\Operation\Slip\AdapterUserExcessSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Material\Operation\Slip\AdapterUserWarehouseSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Material\Operation\Slip\AdapterUserWarehouseSlipInput.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Material\Operation\Slip\AdapterUserWarehouseSlipOutput.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Material\Records\AdapterUserMaterial.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Material\Records\AdapterUserWarehouse.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Purchase\Operation\Order\AdapterUserPurchaseOrder.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Purchase\Operation\Order\AdapterUserPurchaseReturnOrder.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Purchase\Operation\Slip\AdapterUserPurchaseReturnSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Purchase\Operation\Slip\AdapterUserPurchaseSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Sale\Operation\Order\AdapterUserWholesaleOrder.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Sale\Operation\Order\AdapterUserWholesaleReturnOrder.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Sale\Operation\Order\AdapterUserZeroOrder.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Sale\Operation\Slip\AdapterUserWholesaleReturnSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Sale\Operation\Slip\AdapterUserWholesaleSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Sale\Operation\Slip\AdapterUserZeroSlip.cs" />
+    <Compile Include="AvaExt\Adapter\ForUser\Sale\Reference\AdapterUserCampaignCard.cs" />
+    <Compile Include="AvaExt\Adapter\IAdapterUserForm.cs" />
+    <Compile Include="AvaExt\Adapter\Tools\ImplRowValidator\ImplValidRowStockGlobal.cs" />
+    <Compile Include="AvaExt\Adapter\Tools\ImplRowValidator\ImplValidRowStockLocal.cs" />
+    <Compile Include="AvaExt\Adapter\Tools\ImplRowValidator\ImplValidRowStockPriced.cs" />
+    <Compile Include="AvaExt\Adapter\Tools\StockRowsSelector\StockGlobalSubGroups.cs" />
+    <Compile Include="AvaExt\Adapter\Tools\StockRowsSelector\StockGlobalTopGroups.cs" />
+    <Compile Include="AvaExt\Adapter\Tools\StockRowsSelector\StockLocalSubGroups.cs" />
+    <Compile Include="AvaExt\Adapter\Tools\StockRowsSelector\StockLocalTopGroups.cs" />
+    <Compile Include="AvaExt\Adapter\Tools\ToolNumerator.cs" />
+    <Compile Include="AvaExt\Adapter\Tools\ToolSlip.cs" />
+    <Compile Include="AvaExt\Adapter\Tools\ToolStockLine.cs" />
+    <Compile Include="AvaExt\Adapter\Tools\ToolStockRemain.cs" />
+    <Compile Include="AvaExt\AndroidEnv\ApplicationBase\ActivityExt.cs" />
+    <Compile Include="AvaExt\AndroidEnv\ApplicationBase\ApplicationExt.cs" />
+    <Compile Include="AvaExt\AndroidEnv\ControlsBase\DataGrid.cs" />
+    <Compile Include="AvaExt\AndroidEnv\ControlsBase\Form.cs" />
+    <Compile Include="AvaExt\AndroidEnv\ControlsBase\IControl.cs" />
+    <Compile Include="AvaExt\AndroidEnv\ControlsTools\ToolMsgAndroid.cs" />
+    <Compile Include="AvaExt\Common\AppObject.cs" />
+    <Compile Include="AvaExt\Common\BaseFormat.cs" />
+    <Compile Include="AvaExt\Common\BlockHandler.cs" />
+    <Compile Include="AvaExt\Common\BlockPoint.cs" />
+    <Compile Include="AvaExt\Common\ChainConst.cs" />
+    <Compile Include="AvaExt\Common\ChainReading.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstActive.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstActivityFlag.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstBool.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstBoolRev.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstCalculationType.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstCashDocType.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstClientTran.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstClientType.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstCmdLine.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstCompCardLineType.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstDocGroupCode.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstDocNumCash.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstDocNumModule.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstDocTypeMaterial.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstFile.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstIOCode.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstLineType.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstMarkingCodesGroup.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstMarkingCodesType.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstMaterialModuleType.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstMaterialType.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstMaterialUnitPrefered.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstMatTracking.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstObjectDocInfo.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstObjectDocType.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstObjectNamePrefix.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstOperationSign.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstOperationType.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstOrderStatus.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstOrderType.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstPriceType.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstRefCode.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstRetCostType.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstSourceType.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstSqlParametersName.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstUnitSetType.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstUsedCur.cs" />
+    <Compile Include="AvaExt\Common\Const\ConstValues.cs" />
+    <Compile Include="AvaExt\Common\CurrentVersion.cs" />
+    <Compile Include="AvaExt\Common\FileConst.cs" />
+    <Compile Include="AvaExt\Common\FlagStore.cs" />
+    <Compile Include="AvaExt\Common\IActivity.cs" />
+    <Compile Include="AvaExt\Common\IBlockPoint.cs" />
+    <Compile Include="AvaExt\Common\IEnvironment.cs" />
+    <Compile Include="AvaExt\Common\IFlagStore.cs" />
+    <Compile Include="AvaExt\Common\ImplEnvironment.cs" />
+    <Compile Include="AvaExt\Common\ImplUserImage.cs" />
+    <Compile Include="AvaExt\Common\IServerAgent.cs" />
+    <Compile Include="AvaExt\Common\IUserImage.cs" />
+    <Compile Include="AvaExt\Common\ToolArray.cs" />
+    <Compile Include="AvaExt\Common\ToolBarcode.cs" />
+    <Compile Include="AvaExt\Common\ToolBarcode2.cs" />
+    <Compile Include="AvaExt\Common\ToolControl.cs" />
+    <Compile Include="AvaExt\Common\ToolDate.cs" />
+    <Compile Include="AvaExt\Common\ToolDateTime.cs" />
+    <Compile Include="AvaExt\Common\ToolDispose.cs" />
+    <Compile Include="AvaExt\Common\ToolDouble.cs" />
+    <Compile Include="AvaExt\Common\ToolGUID.cs" />
+    <Compile Include="AvaExt\Common\ToolID.cs" />
+    <Compile Include="AvaExt\Common\ToolLRef.cs" />
+    <Compile Include="AvaExt\Common\ToolMobile.cs" />
+    <Compile Include="AvaExt\Common\ToolMsg.cs" />
+    <Compile Include="AvaExt\Common\ToolObjectName.cs" />
+    <Compile Include="AvaExt\Common\ToolPrint.cs" />
+    <Compile Include="AvaExt\Common\ToolString.cs" />
+    <Compile Include="AvaExt\Common\ToolType.cs" />
+    <Compile Include="AvaExt\Common\ToolTypeSet.cs" />
+    <Compile Include="AvaExt\Common\ToolXml.cs" />
+    <Compile Include="AvaExt\Common\ToolZip.cs" />
+    <Compile Include="AvaExt\Common\WorkerStart.cs" />
+    <Compile Include="AvaExt\ControlOperation\IControlBind.cs" />
+    <Compile Include="AvaExt\ControlOperation\IControlGlobalInit.cs" />
+    <Compile Include="AvaExt\ControlOperation\IIndestructable.cs" />
+    <Compile Include="AvaExt\ControlOperation\InitBinding.cs" />
+    <Compile Include="AvaExt\ControlOperation\InitForGlobal.cs" />
+    <Compile Include="AvaExt\ControlOperation\ISelfDestructable.cs" />
+    <Compile Include="AvaExt\Database\ColumnDescriptor.cs" />
+    <Compile Include="AvaExt\Database\Const\DefinedParameters.cs" />
+    <Compile Include="AvaExt\Database\Const\LRef.cs" />
+    <Compile Include="AvaExt\Database\GL\ConstCardGlRelationTrcode.cs" />
+    <Compile Include="AvaExt\Database\GL\ConstCardGlRelationType.cs" />
+    <Compile Include="AvaExt\Database\GL\ConstCardGlShemaRelationType.cs" />
+    <Compile Include="AvaExt\Database\GL\MaterialGLAcc.cs" />
+    <Compile Include="AvaExt\Database\IDbDscriptor.cs" />
+    <Compile Include="AvaExt\Database\ImplDbDscriptor.cs" />
+    <Compile Include="AvaExt\Database\ImplDummyTableDescriptor.cs" />
+    <Compile Include="AvaExt\Database\ImplTableDescriptor.cs" />
+    <Compile Include="AvaExt\Database\ITableDescriptor.cs" />
+    <Compile Include="AvaExt\Database\Resource\SqlText.Designer.cs" />
+    <Compile Include="AvaExt\Database\Tools\Resources\SqlText.Designer.cs" />
+    <Compile Include="AvaExt\Database\Tools\ToolGeneral.cs" />
+    <Compile Include="AvaExt\Database\Tools\ToolMaterial.cs" />
+    <Compile Include="AvaExt\Database\Tools\ToolSeq.cs" />
+    <Compile Include="AvaExt\DataEditor\IDataEditor.cs" />
+    <Compile Include="AvaExt\DataExchange\DataExchangeType.cs" />
+    <Compile Include="AvaExt\DataExchange\IDataExchange.cs" />
+    <Compile Include="AvaExt\DataExchange\IDataExchangeExt.cs" />
+    <Compile Include="AvaExt\DataExchange\ImplDataExchange.cs" />
+    <Compile Include="AvaExt\DataRefernce\IDataReference.cs" />
+    <Compile Include="AvaExt\DataRefernce\IDataReferenceHelper.cs" />
+    <Compile Include="AvaExt\DataRefernce\ImplDataReference.cs" />
+    <Compile Include="AvaExt\DataRefernce\ImplReferenceFactory.cs" />
+    <Compile Include="AvaExt\DataRefernce\IReferenceFactory.cs" />
+    <Compile Include="AvaExt\Drivers\DriverStub.cs" />
+    <Compile Include="AvaExt\ECollections\Dublet.cs" />
+    <Compile Include="AvaExt\Expression\CalcDouble.cs" />
+    <Compile Include="AvaExt\Expression\CalcDoubleCoif.cs" />
+    <Compile Include="AvaExt\Expression\CalcDoubleDiv.cs" />
+    <Compile Include="AvaExt\Expression\CalcDoubleMult.cs" />
+    <Compile Include="AvaExt\Expression\CalcDoubleSub.cs" />
+    <Compile Include="AvaExt\Expression\CalcDoubleSum.cs" />
+    <Compile Include="AvaExt\Expression\IClassEvaluator.cs" />
+    <Compile Include="AvaExt\Expression\IEvaluator.cs" />
+    <Compile Include="AvaExt\Expression\ImplExpEvaluator.cs" />
+    <Compile Include="AvaExt\Expression\ImplRowEvaluator.cs" />
+    <Compile Include="AvaExt\Expression\IRowEvaluator.cs" />
+    <Compile Include="AvaExt\Expression\Resource\ScriptText.Designer.cs" />
+    <Compile Include="AvaExt\Expression\SimpleScript.cs" />
+    <Compile Include="AvaExt\FileSystem\FileDescriptor.cs" />
+    <Compile Include="AvaExt\FileSystem\FileExt.cs" />
+    <Compile Include="AvaExt\FileSystem\IFileSystem.cs" />
+    <Compile Include="AvaExt\FileSystem\ImplFileSystem.cs" />
+    <Compile Include="AvaExt\FileSystem\ImplFileSystemBase.cs" />
+    <Compile Include="AvaExt\FileSystem\RootInfoFile.cs" />
+    <Compile Include="AvaExt\Filter\ConstBoolOperation.cs" />
+    <Compile Include="AvaExt\Filter\ConstCompareOperation.cs" />
+    <Compile Include="AvaExt\Filter\ConstPosition.cs" />
+    <Compile Include="AvaExt\Filter\FilterInfo.cs" />
+    <Compile Include="AvaExt\Filter\FilterItem.cs" />
+    <Compile Include="AvaExt\Filter\IFilter.cs" />
+    <Compile Include="AvaExt\Filter\ImplFilter.cs" />
+    <Compile Include="AvaExt\Filter\KeyInputByField.cs" />
+    <Compile Include="AvaExt\Formating\XmlFormating.cs" />
+    <Compile Include="AvaExt\InfoClass\InfoApplication.cs" />
+    <Compile Include="AvaExt\InfoClass\InfoDataSource.cs" />
+    <Compile Include="AvaExt\InfoClass\InfoInvoiceSum.cs" />
+    <Compile Include="AvaExt\InfoClass\InfoUI.cs" />
+    <Compile Include="AvaExt\InterConnection\ErrorState.cs" />
+    <Compile Include="AvaExt\Logining\Loger.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableACCCODES.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableBANKACC.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableBNCARD.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableCAMPAIGN.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableCLCARD.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableCLFLINE.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableCMPGNLINE.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableCRDACREF.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableCURRENCY.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableCURRENCYLIST.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableDAILYEXCHANGES.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableDEP.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableDIV.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableDOCNUM.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableDUMMY.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableEMUHACC.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableFACK.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableFIRM.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableFIRMDOC.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableFIRMPARAMS.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableGNTOTCL.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableGNTOTST.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableINFODOCSAVE.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableINFOFIRM.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableINFOPERIOD.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableITEMS.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableITMUNITA.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableKSCARD.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableKSLINES.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableLANG.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableMARK.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableORFICHE.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableORFLINE.cs" />
+    <Compile Include="AvaExt\Manual\Table\TablePAYTRANS.cs" />
+    <Compile Include="AvaExt\Manual\Table\TablePERDOC.cs" />
+    <Compile Include="AvaExt\Manual\Table\TablePERIOD.cs" />
+    <Compile Include="AvaExt\Manual\Table\TablePRCLIST.cs" />
+    <Compile Include="AvaExt\Manual\Table\TablePROJECT.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableSHPAGENT.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableSLSCLREL.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableSLSMAN.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableSPECODES.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableSTFICHE.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableSTLINE.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableTRADGRP.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableTRADINGGROUP.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableUNITBARCODE.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableUNITSETF.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableUNITSETL.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableUSER.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableWAREHOUSE.cs" />
+    <Compile Include="AvaExt\Manual\Table\TableWHOUSE.cs" />
+    <Compile Include="AvaExt\Manual\Tool\ToolPAYTRANS.cs" />
+    <Compile Include="AvaExt\MyEvents\Class1.cs" />
+    <Compile Include="AvaExt\MyException\IHandlerException.cs" />
+    <Compile Include="AvaExt\MyException\ImplHandlerException.cs" />
+    <Compile Include="AvaExt\MyException\MyBaseException.cs" />
+    <Compile Include="AvaExt\MyException\MyExceptionError.cs" />
+    <Compile Include="AvaExt\MyException\MyExceptionInner.cs" />
+    <Compile Include="AvaExt\MyException\MyExceptionProcessStoped.cs" />
+    <Compile Include="AvaExt\MyException\MyExceptionUndefined.cs" />
+    <Compile Include="AvaExt\MyException\ReturnHandler.cs" />
+    <Compile Include="AvaExt\MyException\ToolException.cs" />
+    <Compile Include="AvaExt\MyLog\IHandlerLog.cs" />
+    <Compile Include="AvaExt\MyLog\ImplHandlerLog.cs" />
+    <Compile Include="AvaExt\MyLog\IUserHandlerLog.cs" />
+    <Compile Include="AvaExt\ObjectSource\ImplObjectSourceAdapterRow.cs" />
+    <Compile Include="AvaExt\ObjectSource\ImplObjectSourceControlText.cs" />
+    <Compile Include="AvaExt\ObjectSource\ImplObjectSourceGridCurrentBindedRow.cs" />
+    <Compile Include="AvaExt\ObjectSource\ImplObjectSourceRowCell.cs" />
+    <Compile Include="AvaExt\ObjectSource\ImplObjectSourceStaticRow.cs" />
+    <Compile Include="AvaExt\ObjectSource\ImplObjectSourceStaticValue.cs" />
+    <Compile Include="AvaExt\ObjectSource\ImplObjectSourceTableCell.cs" />
+    <Compile Include="AvaExt\ObjectSource\IObjectConverter.cs" />
+    <Compile Include="AvaExt\ObjectSource\IObjectSource.cs" />
+    <Compile Include="AvaExt\PagedSource\ImplPagedSource.cs" />
+    <Compile Include="AvaExt\PagedSource\ImplPagedSourceFromDs.cs" />
+    <Compile Include="AvaExt\PagedSource\IPagedSource.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceCampCard.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceCampCardLine.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceCashTrans.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceClient.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceClientGenStat.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceClientPayTrans.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceClientTrans.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceClientTransClientFiltered.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceCurrencyList.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceCurrencyListMagic.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceDailyExchanges.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceDailyExchangesMagic.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceDep.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceDiv.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceDocFirm.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceDocNum.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceDocPer.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceDynClientGroupGenStat.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceFack.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceFirm.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceFirmParams.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceInfoDocSave.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceInfoFirm.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceInfoPeriod.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceInvoice.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceInvoiceClientFiltered.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceMarkingCodes.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceMaterial.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceMaterialGenStat.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceMaterialTrans.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceMaterialUnitMagic.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceMaterialUnits.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceMaterialUnitsBarcode.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceMatsIO.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceOrder.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceOrderClientFiltered.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceOrderTrans.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourcePeriod.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourcePriceList.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourcePriceListMagic.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourcePriceListPlantMagic.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceSalesMan.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceSalesManClientRel.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceSlip.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceTradingGroup.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceUnits.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceUnitSet.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceUser.cs" />
+    <Compile Include="AvaExt\PagedSource\PagedSourceWarehouse.cs" />
+    <Compile Include="AvaExt\Reporting\ImplReport.cs" />
+    <Compile Include="AvaExt\Reporting\ImplReportServer.cs" />
+    <Compile Include="AvaExt\Reporting\ImplReportServerSource.cs" />
+    <Compile Include="AvaExt\Reporting\ImplReportSource.cs" />
+    <Compile Include="AvaExt\Reporting\IReport.cs" />
+    <Compile Include="AvaExt\Reporting\IReportRender.cs" />
+    <Compile Include="AvaExt\Reporting\IReportRenderUtil.cs" />
+    <Compile Include="AvaExt\Reporting\IReportSource.cs" />
+    <Compile Include="AvaExt\Reporting\RenderingInfo.cs" />
+    <Compile Include="AvaExt\Reporting\XmlReport\ImplXmlReport.cs" />
+    <Compile Include="AvaExt\Settings\ISettings.cs" />
+    <Compile Include="AvaExt\Settings\ISettingsStore.cs" />
+    <Compile Include="AvaExt\Settings\SettingsFileName.cs" />
+    <Compile Include="AvaExt\Settings\SettingsFromFileExt.cs" />
+    <Compile Include="AvaExt\Settings\SettingsFromFileResolved.cs" />
+    <Compile Include="AvaExt\Settings\SettingsFromTable.cs" />
+    <Compile Include="AvaExt\Settings\SettingsFromXmlDoc.cs" />
+    <Compile Include="AvaExt\Settings\SettingsMobAgent.cs" />
+    <Compile Include="AvaExt\Settings\SettingsNamesApp.cs" />
+    <Compile Include="AvaExt\Settings\SettingsNamesSys.cs" />
+    <Compile Include="AvaExt\Settings\SettingsStoreFromDirectory.cs" />
+    <Compile Include="AvaExt\Settings\SettingsSysMob.cs" />
+    <Compile Include="AvaExt\SQL\DBSupport\DBSupportBase.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\Const\ConstSqlPatern.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\ImplSqlBuilder.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\ISqlBuilder.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\Preparing\ISqlBuilderPreparer.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\Preparing\SqlBuilderPreparerBeginGroup.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\Preparing\SqlBuilderPreparerEndGroup.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\Preparing\SqlBuilderPreparerFixedCondition.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\Preparing\SqlBuilderPreparerFixedConditionTable.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\Preparing\SqlBuilderPreparerFixedSort.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\Preparing\SqlBuilderPreparerObjectSource.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\Preparing\SqlBuilderPreparerObjectSourceFreePar.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\Preparing\SqlBuilderPreparerObjectSourceTable.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\Resource\SqlPattern.Designer.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderCashTrans.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderClient.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderClientGenStat.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderClientPayTrans.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderClientTrans.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderClientTransClientFiltered.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderCompCard.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderCompCardLine.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderCurrencyList.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderDailyExchanges.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderDep.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderDiv.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderDocFirm.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderDocNum.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderDocPer.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderDynClientGroupGenStat.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderFack.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderFirm.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderFirmParams.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderFromDs.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderInfoDocSave.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderInfoFirm.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderInfoPeriod.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderInvoice.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderInvoiceClientFiltered.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderMarkingCodes.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderMaterial.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderMaterialGenStat.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderMaterialTrans.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderMaterialUnits.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderMaterialUnitsBarcode.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderMatsIO.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderOrder.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderOrderClientFiltered.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderOrderTrans.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderPriceList.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderPriod.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderSalesMan.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderSalesManClientRel.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderSlip.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderTradingGroup.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderUnits.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderUnitSet.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderUser.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlBuilderWarehouse.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlTypeRelations.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\SqlTypeRelationsString.cs" />
+    <Compile Include="AvaExt\SQL\Dynamic\ToolSqlText.cs" />
+    <Compile Include="AvaExt\SQL\ParameterProtocol\ParameterSetWraper.cs" />
+    <Compile Include="AvaExt\SQL\Resources\SQLTextCollection.Designer.cs" />
+    <Compile Include="AvaExt\SQL\SqlExecute.cs" />
+    <Compile Include="AvaExt\SQL\SqlPF.cs" />
+    <Compile Include="AvaExt\SQL\SqlTextConstant.cs" />
+    <Compile Include="AvaExt\TableOperation\ActivityTypes\EventFilerActivityForRow.cs" />
+    <Compile Include="AvaExt\TableOperation\ActivityTypes\EventFilerActivityForRowColumn.cs" />
+    <Compile Include="AvaExt\TableOperation\CellAutomation\CellAutomationDB.cs" />
+    <Compile Include="AvaExt\TableOperation\CellAutomation\CellAutomationReseter.cs" />
+    <Compile Include="AvaExt\TableOperation\CellAutomation\CellAutomationSimple.cs" />
+    <Compile Include="AvaExt\TableOperation\CellAutomation\CellAutomationSimpleExp.cs" />
+    <Compile Include="AvaExt\TableOperation\CellAutomation\CellAutomationSimpleScript.cs" />
+    <Compile Include="AvaExt\TableOperation\CellAutomation\CellAutomationSpace.cs" />
+    <Compile Include="AvaExt\TableOperation\CellAutomation\CellAutomationSpaceDB.cs" />
+    <Compile Include="AvaExt\TableOperation\CellAutomation\CellAutomationSpaceExp.cs" />
+    <Compile Include="AvaExt\TableOperation\CellAutomation\ICellReltions.cs" />
+    <Compile Include="AvaExt\TableOperation\CellAutomation\ImplCellReltions.cs" />
+    <Compile Include="AvaExt\TableOperation\CellAutomation\ImplTableColumnChangedWrap.cs" />
+    <Compile Include="AvaExt\TableOperation\CellAutomation\ImplTableTouchMemory.cs" />
+    <Compile Include="AvaExt\TableOperation\CellAutomation\ITableColumnChanged.cs" />
+    <Compile Include="AvaExt\TableOperation\CellAutomation\ITableTouchMemory.cs" />
+    <Compile Include="AvaExt\TableOperation\CellAutomation\TableEvents\ColumnChangeEventType.cs" />
+    <Compile Include="AvaExt\TableOperation\CellAutomation\TableEvents\ITableColumnChange.cs" />
+    <Compile Include="AvaExt\TableOperation\CellMath.cs" />
+    <Compile Include="AvaExt\TableOperation\CellMathActions\ICellMath.cs" />
+    <Compile Include="AvaExt\TableOperation\CellMathActions\ImplCellMathDiv.cs" />
+    <Compile Include="AvaExt\TableOperation\CellMathActions\ImplCellMathDummy.cs" />
+    <Compile Include="AvaExt\TableOperation\CellMathActions\ImplCellMathMul.cs" />
+    <Compile Include="AvaExt\TableOperation\CellMathActions\ImplCellMathSub.cs" />
+    <Compile Include="AvaExt\TableOperation\CellMathActions\ImplCellMathSum.cs" />
+    <Compile Include="AvaExt\TableOperation\ColumnMath.cs" />
+    <Compile Include="AvaExt\TableOperation\Const\ConstMathOperation.cs" />
+    <Compile Include="AvaExt\TableOperation\Const\ConstSelectAction.cs" />
+    <Compile Include="AvaExt\TableOperation\EventFiler\EventFilerColumnChangedPickAll.cs" />
+    <Compile Include="AvaExt\TableOperation\IRowMathAction.cs" />
+    <Compile Include="AvaExt\TableOperation\RowColumnsBindingBase.cs" />
+    <Compile Include="AvaExt\TableOperation\RowColumnsBindingDBRelations.cs" />
+    <Compile Include="AvaExt\TableOperation\RowDeleteWatcher.cs" />
+    <Compile Include="AvaExt\TableOperation\RowEventBindable.cs" />
+    <Compile Include="AvaExt\TableOperation\RowIniter\ImplRowIniter.cs" />
+    <Compile Include="AvaExt\TableOperation\RowIniter\ImplRowIniterDefaults.cs" />
+    <Compile Include="AvaExt\TableOperation\RowIniter\ImplRowIniterValidated.cs" />
+    <Compile Include="AvaExt\TableOperation\RowIniter\IRowIniter.cs" />
+    <Compile Include="AvaExt\TableOperation\RowLocalGroupKeeper.cs" />
+    <Compile Include="AvaExt\TableOperation\RowReseter.cs" />
+    <Compile Include="AvaExt\TableOperation\RowsSelector\IRowSource.cs" />
+    <Compile Include="AvaExt\TableOperation\RowsSelector\IRowsSelector.cs" />
+    <Compile Include="AvaExt\TableOperation\RowsSelector\RowsSelectorExp.cs" />
+    <Compile Include="AvaExt\TableOperation\RowsSelector\RowsSelectorValidator.cs" />
+    <Compile Include="AvaExt\TableOperation\RowValidator\IRowValidator.cs" />
+    <Compile Include="AvaExt\TableOperation\RowValidator\RowValidatorExp.cs" />
+    <Compile Include="AvaExt\TableOperation\RowValidator\RowValidatorFalse.cs" />
+    <Compile Include="AvaExt\TableOperation\RowValidator\RowValidatorGroup.cs" />
+    <Compile Include="AvaExt\TableOperation\RowValidator\RowValidatorInListInt.cs" />
+    <Compile Include="AvaExt\TableOperation\RowValidator\RowValidatorNotInListInt.cs" />
+    <Compile Include="AvaExt\TableOperation\RowValidator\RowValidatorTrue.cs" />
+    <Compile Include="AvaExt\TableOperation\TableConverter\ImplTableConverterSort.cs" />
+    <Compile Include="AvaExt\TableOperation\TableConverter\ITableConverter.cs" />
+    <Compile Include="AvaExt\TableOperation\TablesColumnsBinding.cs" />
+    <Compile Include="AvaExt\TableOperation\TableTouchDetector.cs" />
+    <Compile Include="AvaExt\TableOperation\ToolCell.cs" />
+    <Compile Include="AvaExt\TableOperation\ToolColumn.cs" />
+    <Compile Include="AvaExt\TableOperation\ToolRow.cs" />
+    <Compile Include="AvaExt\TableOperation\ToolTable.cs" />
+    <Compile Include="AvaExt\Translating\Tools\ITranslateable.cs" />
+    <Compile Include="AvaExt\Translating\Tools\MessageCollection.cs" />
+    <Compile Include="AvaExt\Translating\Tools\TranslaterControl.cs" />
+    <Compile Include="AvaExt\Translating\Tools\TranslaterGen.cs" />
+    <Compile Include="AvaExt\Translating\Tools\TranslaterText.cs" />
+    <Compile Include="AvaExt\Translating\Tools\WordCollection.cs" />
+    <Compile Include="AvaExt\UI\UserMsg.cs" />
+    <Compile Include="AvaExt\UserReference\ImplUserReference.cs" />
+    <Compile Include="AvaExt\UserReference\IUserReference.cs" />
+    <Compile Include="AvaGE\Common\MobFormBase.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceCashCollections.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceCashPayment.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceClients.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceMaterial.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceMaterialBarcode.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceMaterialPromoBarcode.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceOrdersPurchase.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceOrdersPurchaseReturn.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceOrdersReturn.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceOrdersSale.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceOrdersWarehouseCounting.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceOrdersWarehouseInput.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceOrdersWarehouseList.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceOrdersWarehouseOutput.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceOrdersZero.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferencePromoMaterial.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceSlipsDeficit.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceSlipsExcess.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceSlipsPurchase.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceSlipsPurchaseReturns.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceSlipsReturns.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceSlipsSales.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceSlipsWarehouseInput.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobDataReferenceSlipsWarehouseOutput.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobImplDataReferenceForDateSelect.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobImplDataReferenceForGridForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobImplDataReferenceForStringSelect.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobImplDataReferenceForValueSelect.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobImplDataReferenceForValueSelectNum.cs" />
+    <Compile Include="AvaGE\FormDataReference\MobImplDataReferenceForValueSelectNumPercent.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceCashCollectionForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceCashPaymentForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceClientsForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceDateSelectForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceForCashForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceForMoveForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceForOrderForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceGridFormBase.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceMaterialsForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceMaterialsPromoForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceOrdersPurchaseForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceOrdersPurchaseReturnForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceOrdersReturnForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceOrdersSaleForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceOrdersWarehouseCountingForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceOrdersWarehouseInputForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceOrdersWarehouseListForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceOrdersWarehouseOutputForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceOrdersZeroForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferencePurchaseForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferencePurchaseReturnsForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceReturnsForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceSalesForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceSlipsDeficitForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceSlipsExcessForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceSlipsWarehouseInputForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceSlipsWarehouseOutputForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceStringSelectForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceValueSelectBarcodeForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceValueSelectBarcodeMatForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceValueSelectBarcodeMatPromoForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceValueSelectForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceValueSelectNumForm.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceValueSelectNumFormPerc.cs" />
+    <Compile Include="AvaGE\FormDataReference\UserForm\MobDataReferenceWithAdapterForm.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Const\ConstAdapterNames.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Finance\Operations\Cash\MobUserEditorFormCashCollection.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Finance\Operations\Cash\MobUserEditorFormCashIO.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Finance\Operations\Cash\MobUserEditorFormCashPayment.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Material\Operations\Order\MobUserEditorFormWarehouseOrderCounting.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Material\Operations\Order\MobUserEditorFormWarehouseOrderInput.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Material\Operations\Order\MobUserEditorFormWarehouseOrderList.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Material\Operations\Order\MobUserEditorFormWarehouseOrderOutput.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Material\Operations\Slip\MobUserEditorFormDeficitSlip.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Material\Operations\Slip\MobUserEditorFormExcessSlip.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Material\Operations\Slip\MobUserEditorFormWarehouseSlipInput.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Material\Operations\Slip\MobUserEditorFormWarehouseSlipOutput.cs" />
+    <Compile Include="AvaGE\FormUserEditor\MobInputItemVarsForm.cs" />
+    <Compile Include="AvaGE\FormUserEditor\MobUserEditorFormBase.cs" />
+    <Compile Include="AvaGE\FormUserEditor\MobUserEditorFormMaterialDoc.cs" />
+    <Compile Include="AvaGE\FormUserEditor\MobUserEditorFormMaterialDocOrder.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Purchase\Operations\Order\MobUserEditorFormWholesaleOrder.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Purchase\Operations\Order\MobUserEditorFormWholesaleReturnOrder.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Purchase\Operations\Slip\MobUserEditorFormWholesaleReturnSlip.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Purchase\Operations\Slip\MobUserEditorFormWholesaleSlip.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Sale\Operations\Order\MobUserEditorFormWholesaleOrder.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Sale\Operations\Order\MobUserEditorFormWholesaleReturnOrder.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Sale\Operations\Order\MobUserEditorFormZeroOrder.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Sale\Operations\Slip\MobUserEditorFormWholesaleReturnSlip.cs" />
+    <Compile Include="AvaGE\FormUserEditor\Sale\Operations\Slip\MobUserEditorFormWholesaleSlip.cs" />
+    <Compile Include="AvaGE\MobControl\ControlsTools\BindDataRefenceAsActivity.cs" />
+    <Compile Include="AvaGE\MobControl\ControlsTools\BindDataRefenceAsActivitySet.cs" />
+    <Compile Include="AvaGE\MobControl\ControlsTools\BindDataRefenceAsActivitySimple.cs" />
+    <Compile Include="AvaGE\MobControl\ControlsTools\ImplPagedGridExtender.cs" />
+    <Compile Include="AvaGE\MobControl\ControlsTools\IPagedDataAction.cs" />
+    <Compile Include="AvaGE\MobControl\ControlsTools\UserMessanger\IUserMessanger.cs" />
+    <Compile Include="AvaGE\MobControl\ControlsTools\UserMessanger\IUserTopMessanger.cs" />
+    <Compile Include="AvaGE\MobControl\ControlsTools\UserMessanger\UserMessangerChild.cs" />
+    <Compile Include="AvaGE\MobControl\ControlsTools\UserMessanger\UserMessangerChildDummy.cs" />
+    <Compile Include="AvaGE\MobControl\ControlsTools\UserMessanger\UserMessangerParentControlText.cs" />
+    <Compile Include="AvaGE\MobControl\MobButton.cs" />
+    <Compile Include="AvaGE\MobControl\MobCheckBox.cs" />
+    <Compile Include="AvaGE\MobControl\MobDataGrid.cs" />
+    <Compile Include="AvaGE\MobControl\MobDateEdit.cs" />
+    <Compile Include="AvaGE\MobControl\MobDatePicker.cs" />
+    <Compile Include="AvaGE\MobControl\MobForm.cs" />
+    <Compile Include="AvaGE\MobControl\MobFrame.cs" />
+    <Compile Include="AvaGE\MobControl\MobLabel.cs" />
+    <Compile Include="AvaGE\MobControl\MobListView.cs" />
+    <Compile Include="AvaGE\MobControl\MobNumEdit.cs" />
+    <Compile Include="AvaGE\MobControl\MobNumInput.cs" />
+    <Compile Include="AvaGE\MobControl\MobPanel.cs" />
+    <Compile Include="AvaGE\MobControl\MobPanelRelative.cs" />
+    <Compile Include="AvaGE\MobControl\MobTabControl.cs" />
+    <Compile Include="AvaGE\MobControl\MobTextBox.cs" />
+    <Compile Include="AvaGE\MobControl\MobTimePicker.cs" />
+    <Compile Include="AvaGE\MobControl\MobTreeView.cs" />
+    <Compile Include="AvaGE\MobControl\Reporting\Renders\MobFormShowData.cs" />
+    <Compile Include="AvaGE\MobControl\Reporting\Renders\MobFormShowDataRender.cs" />
+    <Compile Include="AvaGE\MobControl\Reporting\ReportFactory.cs" />
+    <Compile Include="AvaGE\MobControl\Reporting\ReportRenderUtil.cs" />
+    <Compile Include="AvaGE\MobControl\Tools\FilterWrap.cs" />
+    <Compile Include="AvaGE\MobControl\Tools\Formating\FormatFromTable.cs" />
+    <Compile Include="AvaGE\MobControl\Tools\HelperNumEdit.cs" />
+    <Compile Include="AvaGE\MobControl\Tools\INumEditor.cs" />
+    <Compile Include="AvaGE\MyLog\FormUserHandlerLog.cs" />
+    <Compile Include="AvaGE\MyLog\ImplUserHandlerLog.cs" />
+    <Compile Include="AvaPlugin\AvaPlugin.cs" />
+    <Compile Include="AvaPlugin\DriverInterface.cs" />
+    <Compile Include="AvaRes\ToolRes.cs" />
+    <Compile Include="Common\ConstProtCmd.cs" />
+    <Compile Include="Common\ConstProtResult.cs" />
+    <Compile Include="Common\MobEnvironment.cs" />
+    <Compile Include="Common\ReferenceCollection.cs" />
+    <Compile Include="FormMain\ActivityTest.cs" />
+    <Compile Include="FormMain\MobFormMain.cs" />
+    <Compile Include="FormMain\AvaApplication.cs" />
+    <Compile Include="FormMain\DataReceive.cs" />
+    <Compile Include="FormMain\DataSend.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AgentData.cs" />
+    <Compile Include="Services\ServerResult.cs" />
+    <Compile Include="SQL\DBSupport\MobAgentDBApiSupport.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AvaRes\config\report\fin\general_profit.rar" />
+    <None Include="AvaRes\config\report\sale\sale.rar" />
+    <None Include="AvaRes\config\report\sale\slip_return_sum.rar" />
+    <None Include="Resources\AboutResources.txt" />
+    <AndroidResource Include="Resources\Layout\FormUserHandlerLog.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\MobDataGridCell.axml" />
+    <AndroidResource Include="Resources\Layout\MobDataGridHeader.axml" />
+    <AndroidResource Include="Resources\Layout\MobDataGridHeaderRow.axml" />
+    <AndroidResource Include="Resources\Layout\MobDataGridRow.axml" />
+    <AndroidResource Include="Resources\Layout\MobDataReferenceDateSelectForm.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\MobDataReferenceGridFormBase.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\MobDataReferenceStringSelectForm.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\MobDataReferenceValueSelectBarcodeForm.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\MobDataReferenceValueSelectNumForm.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\MobFormShowData.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\MobInputItemVarsForm.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\MobListViewItem.axml" />
+    <AndroidResource Include="Resources\Layout\MobNumInput.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\MobTreeViewChild.axml" />
+    <AndroidResource Include="Resources\Layout\MobTreeViewGroup.axml" />
+    <AndroidResource Include="Resources\Layout\MobUserEditorFormCashIO.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\MobUserEditorFormMaterialDoc.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\MobUserEditorFormMaterialDocShort.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\test.axml" />
+    <AndroidResource Include="Resources\Layout\form.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\MobMenuItem.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\MobFormMain.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_add_group.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_add_person.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_cast.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_cast_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_network_wifi.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_remove.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_add_group.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_add_person.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_cast.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_cast_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_network_wifi.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_remove.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_add_group.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_add_person.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_cast.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_cast_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_network_wifi.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_remove.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_add_group.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_add_person.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_cast.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_cast_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_network_wifi.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_remove.png" />
+    <AndroidResource Include="Resources\Values-large\style.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Values-xlarge\style.xml" />
+    <EmbeddedResource Include="AvaExt\Database\Resource\SqlText.resx" />
+    <EmbeddedResource Include="AvaExt\Database\Tools\Resources\SqlText.resx" />
+    <EmbeddedResource Include="AvaExt\Expression\Resource\ScriptText.resx" />
+    <EmbeddedResource Include="AvaExt\SQL\Dynamic\Resource\SqlPattern.resx" />
+    <EmbeddedResource Include="AvaExt\SQL\Resources\SQLTextCollection.resx" />
+    <EmbeddedResource Include="AvaGE\MobControl\Reporting\Renders\MobFormShowData.resx">
+      <DependentUpon>MobFormShowData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvaRes\config\ref\ref.fin.doc.cash.input\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.fin.doc.cash.output\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.fin.rec.client\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.mm.doc.deficit\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.mm.doc.excess\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.mm.doc.warehouse.order.counting\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.mm.doc.warehouse.order.input\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.mm.doc.warehouse.order.list\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.mm.doc.warehouse.order.output\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.mm.doc.warehouse.slip.input\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.mm.doc.warehouse.slip.output\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.mm.rec.mat\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.mm.rec.mat.promo\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.prch.doc.purchase\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.prch.doc.purchase.order\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.prch.doc.purchase.order.return\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.prch.doc.purchase.return\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.sls.doc.wholesale\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.sls.doc.wholesale.order\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.sls.doc.wholesale.order.return\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.sls.doc.wholesale.return\ds.sql" />
+    <EmbeddedResource Include="AvaRes\config\ref\ref.sls.doc.zero.order\ds.sql" />
+    <Content Include="AvaExt\Database\Resource\SqlTextCardGlAccRef.sql" />
+    <Content Include="AvaExt\Database\Tools\Resources\getNewId.sql" />
+    <Content Include="AvaExt\Database\Tools\Resources\lockByUpdate.sql" />
+    <Content Include="AvaExt\Expression\Resource\ClassEvalStub.txt" />
+    <Content Include="AvaExt\Expression\Resource\ScriptEvalStub.txt" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilder.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderCashTrans.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderClient.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderClientGenStat.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderClientPayTrans.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderClientTrans.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderClientTransClientFiltered.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderCompCard.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderCompCardLine.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderCurrencyList.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderDailyExchanges.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderDep.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderDiv.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderDocFirm.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderDocNum.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderDocPer.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderDynClientGroupGenStat.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderFack.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderFirm.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderFirmParams.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderInvoice.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderInvoiceClientFiltered.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderMarkingCodes.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderMaterial.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderMaterialGenStat.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderMaterialTrans.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderMaterialUnits.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderMaterialUnitsBarcode.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderMatsIO.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderOrder.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderOrderClientFiltered.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderOrderTrans.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderPeriod.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderPriceList.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderSalesMan.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderSalesManClientRel.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderSlip.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderTradingGroup.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderUnits.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderUnitSet.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderUser.sql" />
+    <Content Include="AvaExt\SQL\Dynamic\Resource\PatternSqlBuilderWarehouse.sql" />
+    <Content Include="AvaExt\SQL\Resources\NeedUpdate.sql" />
+    <Content Include="AvaExt\SQL\Resources\SetVersion.sql" />
+    <Content Include="AvaRes\config\report\fin\cashstat\ds.sql" />
+    <Content Include="AvaRes\config\report\fin\cashstat\info.xml" />
+    <Content Include="AvaRes\config\report\fin\cashstat\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\fin\cash\ds.sql" />
+    <Content Include="AvaRes\config\report\fin\cash\info.xml" />
+    <Content Include="AvaRes\config\report\fin\cash\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\fin\clientbalance\ds.sql" />
+    <Content Include="AvaRes\config\report\fin\clientbalance\filter.xml" />
+    <Content Include="AvaRes\config\report\fin\clientbalance\info.xml" />
+    <Content Include="AvaRes\config\report\fin\clientbalance\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\fin\clientlasttrans\ds.sql" />
+    <Content Include="AvaRes\config\report\fin\clientlasttrans\filter.xml" />
+    <Content Include="AvaRes\config\report\fin\clientlasttrans\info.xml" />
+    <Content Include="AvaRes\config\report\fin\clientlasttrans\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\fin\general\ds.sql" />
+    <Content Include="AvaRes\config\report\fin\general\info.xml" />
+    <Content Include="AvaRes\config\report\fin\general\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\fin\general_profit\ds.sql" />
+    <Content Include="AvaRes\config\report\fin\general_profit\info.xml" />
+    <Content Include="AvaRes\config\report\fin\general_profit\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\mm\barcode\ds.sql" />
+    <Content Include="AvaRes\config\report\mm\barcode\info.xml" />
+    <Content Include="AvaRes\config\report\mm\barcode\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\mm\matio\ds.sql" />
+    <Content Include="AvaRes\config\report\mm\matio\info.xml" />
+    <Content Include="AvaRes\config\report\mm\matio\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\mm\remain\ds.sql" />
+    <Content Include="AvaRes\config\report\mm\remain\info.xml" />
+    <Content Include="AvaRes\config\report\mm\remain\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\mm\slip15\ds.sql" />
+    <Content Include="AvaRes\config\report\mm\slip15\info.xml" />
+    <Content Include="AvaRes\config\report\mm\slip15\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\purchase\order\ds.sql" />
+    <Content Include="AvaRes\config\report\purchase\order\info.xml" />
+    <Content Include="AvaRes\config\report\purchase\order\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\purchase\order\rep\rep2.xml" />
+    <Content Include="AvaRes\config\report\purchase\slipstat\ds.sql" />
+    <Content Include="AvaRes\config\report\purchase\slipstat\info.xml" />
+    <Content Include="AvaRes\config\report\purchase\slipstat\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\purchase\slip\ds.sql" />
+    <Content Include="AvaRes\config\report\purchase\slip\info.xml" />
+    <Content Include="AvaRes\config\report\purchase\slip\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\purchase\slip_return\ds.sql" />
+    <Content Include="AvaRes\config\report\purchase\slip_return\info.xml" />
+    <Content Include="AvaRes\config\report\purchase\slip_return\rep\rep.xml" />
+    <EmbeddedResource Include="AvaRes\config\report\rep.matvalues.xml" />
+    <EmbeddedResource Include="AvaRes\config\report\rep.xml" />
+    <Content Include="AvaRes\config\report\sale\order\ds.sql" />
+    <Content Include="AvaRes\config\report\sale\order\info.xml" />
+    <Content Include="AvaRes\config\report\sale\order\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\sale\order\rep\rep2.xml" />
+    <Content Include="AvaRes\config\report\sale\slipstat\ds.sql" />
+    <Content Include="AvaRes\config\report\sale\slipstat\info.xml" />
+    <Content Include="AvaRes\config\report\sale\slipstat\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\sale\slip\ds.sql" />
+    <Content Include="AvaRes\config\report\sale\slip\info.xml" />
+    <Content Include="AvaRes\config\report\sale\slip\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\sale\slip_return\ds.sql" />
+    <Content Include="AvaRes\config\report\sale\slip_return\info.xml" />
+    <Content Include="AvaRes\config\report\sale\slip_return\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\sale\slip_return_sum\ds.sql" />
+    <Content Include="AvaRes\config\report\sale\slip_return_sum\info.xml" />
+    <Content Include="AvaRes\config\report\sale\slip_return_sum\rep\rep.xml" />
+    <Content Include="AvaRes\config\report\sale\slip_sum\ds.sql" />
+    <Content Include="AvaRes\config\report\sale\slip_sum\info.xml" />
+    <Content Include="AvaRes\config\report\sale\slip_sum\rep\rep.xml" />
+    <EmbeddedResource Include="AvaRes\config\sys\app.xml" />
+    <EmbeddedResource Include="AvaRes\config\sys\lang.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvaRes\config\ui\adp.fin.doc.cash.input.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvaRes\config\ui\adp.fin.doc.cash.output.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.mm.doc.deficit.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.mm.doc.excess.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.mm.doc.warehouse.order.counting.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.mm.doc.warehouse.order.input.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.mm.doc.warehouse.order.list.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.mm.doc.warehouse.order.output.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.mm.doc.warehouse.slip.input.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.mm.doc.warehouse.slip.output.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.prch.doc.purchase.order.return.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.prch.doc.purchase.order.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.prch.doc.purchase.return.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.prch.doc.purchase.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.sls.doc.wholesale.order.return.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.sls.doc.wholesale.order.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.sls.doc.wholesale.return.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.sls.doc.wholesale.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\adp.sls.doc.zero.order.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\form.main.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvaRes\config\ui\ref.fin.doc.cash.input.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.fin.doc.cash.output.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.fin.rec.client.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.gen.barcode.mat.promo.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.gen.barcode.mat.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.gen.date.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.gen.num.perc.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.gen.num.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.gen.string.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.mm.doc.deficit.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.mm.doc.excess.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.mm.doc.warehouse.order.counting.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.mm.doc.warehouse.order.input.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.mm.doc.warehouse.order.list.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.mm.doc.warehouse.order.output.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.mm.doc.warehouse.slip.input.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.mm.doc.warehouse.slip.output.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.mm.rec.mat.promo.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.mm.rec.mat.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.prch.doc.purchase.order.return.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.prch.doc.purchase.order.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.prch.doc.purchase.return.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.prch.doc.purchase.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.sls.doc.wholesale.order.return.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.sls.doc.wholesale.order.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.sls.doc.wholesale.return.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.sls.doc.wholesale.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\ref.sls.doc.zero.order.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\tool.edit.itemvars.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\tool.log.xml" />
+    <EmbeddedResource Include="AvaRes\config\ui\tool.showdata.xml" />
+    <EmbeddedResource Include="AvaRes\config\sql\database.sql" />
+    <EmbeddedResource Include="AvaRes\config\sql\new.database.sql" />
+    <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\Values\UIType.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\main.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\main.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\main.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\main.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\main.png" />
+    <AndroidResource Include="Resources\Values\Colors.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Values\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Values\style.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_overflow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AvaExt\Adapter\ForDataSet\Finance\Reference\" />
+    <Folder Include="AvaExt\Adapter\ForDataSet\Material\Reference\" />
+    <Folder Include="AvaExt\Adapter\ForUser\Finance\Reference\" />
+    <Folder Include="AvaExt\Adapter\ForUser\Material\Reference\" />
+    <Folder Include="AvaExt\Barcode\" />
+    <Folder Include="AvaGE\MobControl\DataGridColumns\" />
+    <Folder Include="AvaGE\MobControl\Inventory\" />
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Settings\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
