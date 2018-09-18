@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<settings>
+	
+
+
+	<cGrid ColumnsShow="DATE_,AMOUNT,CLCARD_____DEFINITION_" ColumnsSql="EXTCLCARD" />
+	<cGrid_CANCELLED  Text="" Width="9" FormatSet="list::FORMATSET_GEN_CANCELLED" />
+	<cGrid_AMOUNT  Text="T_TOTAL" Width="50" Format="N2"  />
+	<cGrid_DATE_  Text="T_DATE" Width="100" Format="yy-MM-dd HH:mm"  />
+	<EXTCLCARD Name="CLCARD" Bind="CLIENTREF" Data="DEFINITION_" Sql="SELECT DEFINITION_ FROM LG_$FIRM$_CLCARD WHERE LOGICALREF = @P1" />
+	<cGrid_CLCARD_____DEFINITION_  Text="T_NAME"  Width="100"  />
+
+  
+	<!--<INFO_SOURCE value="INF1"  />
+	<INF1 name="T_DOCUMENT" location="rep loc::config\report\fin\cash" params="@lref,@cref,@crefS,@crefR,@crefC" cols="LOGICALREF,CLIENTREF,CLIENTREF,CLIENTREF,CLIENTREF" />"-->
+	  
+  
+</settings>

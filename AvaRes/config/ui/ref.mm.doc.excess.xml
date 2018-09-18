@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<settings>
+	
+
+
+	<cGrid ColumnsShow="DATE_" ColumnsSql="" />
+	<cGrid_CANCELLED  Text="" Width="9" FormatSet="list::FORMATSET_GEN_CANCELLED" />
+	<cGrid_DATE_  Text="T_DATE" Width="100" Format="yy-MM-dd HH:mm"  />
+
+
+
+</settings>

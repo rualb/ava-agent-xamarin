@@ -1,0 +1,22 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<settings>
+ 
+
+
+	<cGrid ColumnsShow="CODE,NAME,SPE_REMAIN,SPE_PRICE" ColumnsSql="" />
+
+
+	<cGrid_NAME  Text="T_NAME" Width="100"   />
+	<cGrid_CODE  Text="T_CODE" Width="100"   />
+	<cGrid_SPE_REMAIN  Text="T_REMAIN" Width="30" Format="N2"  />
+	<cGrid_SPE_PRICE  Text="T_PRICE" Width="30" Format="N2"  />
+
+	<TOP_FILTER_cGrid name="T_GROUP" cols="STGRPCODE,STGRPCODESUB"  />
+	<MOB_QSEARCH_COLS_S value="NAME,CODE" />
+	
+	
+  <!--<INFO_SOURCE value="INF1"  />
+  <INF1 name="T_REMAIN" location="rep loc::config\report\mm\remain" params="" cols="" />-->
+  
+  
+</settings>

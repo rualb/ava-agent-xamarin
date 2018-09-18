@@ -1,0 +1,34 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<settings>
+ 
+
+	
+
+
+
+
+  <cGrid ColumnsShow="CODE,DEFINITION_,CLCARD_____BALANCE" ColumnsSql="" />
+
+	<GNTOTST Name="GNTOTST" Bind="LOGICALREF" Data="ONHAND" Sql="SELECT ONHAND FROM LG_$FIRM$_$PERIOD$_GNTOTST GNTOTST WHERE INVENNO = -1 AND STOCKREF = @P1" />
+	<UNITSETL Name="UNITSETL" Bind="UNITSETREF" Data="CODE" Sql="SELECT CODE FROM LG_$FIRM$_UNITSETL UNITSETL WHERE MAINUNIT = 1 AND UNITSETREF = @P1" />
+
+  <cGrid_DEFINITION_  Text="T_NAME" Width="100"   />
+  <cGrid_CODE  Text="T_CODE" Width="100"  />
+	 <cGrid_CLCARD_____BALANCE  Text="T_BALANCE" Width="100" Format="N2" /> 
+	<cGrid_UNITSETL_____CODE  Text="T_UNIT_MAIN"  Width="100" Format="N2" />
+	<cGrid_GNTOTST_____ONHAND  Text="T_STOCK_F"  Width="100" Format="N2" />
+
+
+ 
+
+ 
+ 
+	<TOP_FILTER_cGrid name="T_GROUP" cols="CLGRPCODE,CLGRPCODESUB"  />
+	
+
+	<!--<INFO_SOURCE value="INF1,INF2"  />
+	<INF1 name="T_BALANCE" location="rep loc::config\report\fin\clientbalance" params="@lref" cols="LOGICALREF" />
+	<INF2 name="Mərkəzdə Son Əməliyatlar" location="rep loc::config\report\fin\clientlasttrans" params="@lref" cols="LOGICALREF" />-->
+
+
+</settings>

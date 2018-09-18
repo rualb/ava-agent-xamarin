@@ -1,0 +1,76 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<settings>
+	
+
+	<cTree ImageKey="">
+		<cTree_Node_0101 value="cTree_MM" />
+
+		<cTree_Node_0102 value="cTree_MM" />
+		<cTree_Node_0103 value="cTree_MM" />
+		<cTree_Node_0104 value="cTree_MM" />
+		<cTree_Node_0105 value="cTree_MM" />
+		<cTree_Node_0106 value="cTree_MM" />
+		<cTree_Node_0107 value="cTree_MM" />
+		<cTree_Node_0108 value="cTree_MM" /> 
+		<cTree_Node_0109 value="cTree_MM" />
+		<cTree_Node_0110 value="cTree_MM" />
+		
+		<cTree_Node_0311 value="cTree_S"/>
+		<cTree_Node_0312 value="cTree_S"/>
+		<cTree_Node_0313 value="cTree_S"/>
+		<cTree_Node_0314 value="cTree_S"/>
+		<cTree_Node_0315 value="cTree_S"/> 
+
+		<cTree_Node_0211 value="cTree_P"/>
+		<cTree_Node_0212 value="cTree_P"/>
+		<cTree_Node_0213 value="cTree_P"/>
+		<cTree_Node_0214 value="cTree_P"/> 
+
+		<cTree_Node_0401 value="cTree_F"/>
+		<cTree_Node_0412 value="cTree_F"/>
+		<cTree_Node_0413 value="cTree_F"/> 
+
+ 
+	</cTree>
+
+	<cTree_Node_0101 Text="T_REF_MM_REC_MAT" Cmd="ref.mm.rec.mat"  />
+	<cTree_Node_0109 Text="T_REF_MM_DOC_WAREHOUSE_ORDER_LIST" Cmd="ref.mm.doc.warehouse.order.list"  />
+	<cTree_Node_0110 Text="T_REF_MM_DOC_WAREHOUSE_ORDER_COUNTING" Cmd="ref.mm.doc.warehouse.order.counting"  />
+	<cTree_Node_0102 Text="T_REF_MM_REC_MAT_PROMO" Cmd="ref.mm.rec.mat.promo"  />
+	<cTree_Node_0103 Text="T_REF_MM_DOC_WAREHOUSE_ORDER_INPUT" Cmd="ref.mm.doc.warehouse.order.input"  />
+	<cTree_Node_0104 Text="T_REF_MM_DOC_WAREHOUSE_ORDER_OUTPUT" Cmd="ref.mm.doc.warehouse.order.output"  />
+	<cTree_Node_0105 Text="T_REF_MM_DOC_EXCESS" Cmd="ref.mm.doc.excess"  />
+	<cTree_Node_0106 Text="T_REF_MM_DOC_DEFICIT"  Cmd="ref.mm.doc.deficit"  />
+	<cTree_Node_0107 Text="T_REF_MM_DOC_WAREHOUSE_SLIP_INPUT"  Cmd="ref.mm.doc.warehouse.slip.input"  />
+	<cTree_Node_0108 Text="T_REF_MM_DOC_WAREHOUSE_SLIP_OUTPUT"  Cmd="ref.mm.doc.warehouse.slip.output"  />
+		
+	<cTree_Node_0311 Text="T_REF_SLS_DOC_WHOLESALE"   Cmd="ref.sls.doc.wholesale"  />
+	<cTree_Node_0312 Text="T_REF_SLS_DOC_WHOLESALE_RETURN"   Cmd="ref.sls.doc.wholesale.return"  />
+	<cTree_Node_0313 Text="T_REF_SLS_DOC_WHOLESALE_ORDER"   Cmd="ref.sls.doc.wholesale.order"  />
+	<cTree_Node_0314 Text="T_REF_SLS_DOC_WHOLESALE_ORDER_RETURN"   Cmd="ref.sls.doc.wholesale.order.return"  />
+	<cTree_Node_0315 Text="T_REF_SLS_DOC_ZERO_ORDER"   Cmd="ref.sls.doc.zero.order"  />
+
+	<cTree_Node_0211 Text="T_REF_PRCH_DOC_PURCHASE"   Cmd="ref.prch.doc.purchase"  />
+	<cTree_Node_0212 Text="T_REF_PRCH_DOC_PURCHASE_RETURN"   Cmd="ref.prch.doc.purchase.return"  />
+	<cTree_Node_0213 Text="T_REF_PRCH_DOC_PURCHASE_ORDER"   Cmd="ref.prch.doc.purchase.order"  />
+	<cTree_Node_0214 Text="T_REF_PRCH_DOC_PURCHASE_ORDER_RETURN"   Cmd="ref.prch.doc.purchase.order.return"  />
+	
+	<cTree_Node_0401 Text="T_REF_FIN_REC_CLIENT"   Cmd="ref.fin.rec.client"  />
+ 
+	<cTree_Node_0412 Text="T_REF_FIN_DOC_CASH_INPUT"   Cmd="ref.fin.doc.cash.input"  />
+	<cTree_Node_0413 Text="T_REF_FIN_DOC_CASH_OUTPUT"   Cmd="ref.fin.doc.cash.output"  />
+
+ 
+ 
+	<cTree_MM Text="T_WAREHOUSE"  />
+	<cTree_P Text="T_PURCHASE"  />
+	<cTree_S Text="T_SALES"  />
+	<cTree_F Text="T_FINANCE"  />
+	<cTree_R Text="T_REPORT"  />
+ 
+ 
+ 
+
+
+	 
+</settings>

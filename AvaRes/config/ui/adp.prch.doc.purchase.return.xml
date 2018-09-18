@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	
+ 
+
+	<cGrid ColumnsShow="LINETYPE,ITEMS_____CODE,ITEMS_____NAME,AMOUNT,PRICE,DISCPER,TOTAL" ColumnsSql="" />
+
+	<cGrid_ITEMS_____CODE Text="T_CODE"  Width="50"   />
+	<cGrid_ITEMS_____NAME Text="T_NAME"  Width="50"   />
+	<cGrid_LINETYPE  Text="" Width="15"   FormatSet="list::FORMATSET_MAT_TRANS_TYPE_SHORT" />
+	<cGrid_AMOUNT  Text="T_AMOUNT" Width="30" Format="N2"  />
+	<cGrid_PRICE  Text="T_PRICE" Width="30" Format="N2"  />
+	<cGrid_DISCPER  Text="T_DISCOUNT" Width="30" Format="N2"  />
+	<cGrid_TOTAL  Text="T_TOTAL" Width="30" Format="N2"  />
+
+	<cGrid2 ColumnsShow="NETTOTAL,TOTALDISCOUNTS,GROSSTOTAL" ColumnsSql="" />
+	<cGrid2_NETTOTAL  Text="T_TOTAL_NET" Width="45" Format="N2"  />
+	<cGrid2_TOTALDISCOUNTS  Text="T_DISCOUNT" Width="45" Format="N2"  />
+	<cGrid2_GROSSTOTAL  Text="T_TOTAL_GROSS" Width="45" Format="N2"  />
+
+	 
+
+	<MOB_EDIT_PRICE_B value="0" />
+	<MOB_EDIT_DISCOUNT_DOC_B value="0" />
+	<MOB_EDIT_DISCOUNT_MAT_B value="0" />
+	<MOB_EDIT_TOTAL_B value="0" />
+	<MOB_EDIT_DATE_B value="0" />
+	<MOB_USE_PROMOTION_B value="1" />
+	<MOB_USE_MATBARCODE_B value="0" />
+	<EDITOR_REPORT value="config\report\rep.matvalues.xml" />
+</settings>
