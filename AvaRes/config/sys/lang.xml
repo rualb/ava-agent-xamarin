@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <T_ACCOUNT az="Hesab" ru="Счет" en="Account" tr="Hesap" />
+  <T_ACCOUNTING az="Hesab." ru="Счет." en="Accounting" tr="Hesaplar" />
+  <T_ACTION az="Hərəkət" ru="Действие" en="Action" tr="Hareketler" />
+  <T_ACTIVE az="Aktiv" ru="Активный" en="Active" tr="Aktiv" />
+  <T_ADD az="Əlavə elə" ru="Добавить" en="Add" tr="Ekle" />
+  <T_ADDITIONAL az="Əlavə" ru="Дополнительно" en="Additional" tr="Diğer" />
+  <T_AGENT az="Aqent" ru="Агент" en="Agent" tr="Agent" />
+  <T_ALL az="Hamsı" ru="Все" en="All" tr="Hepsi" />
+  <T_AMOUNT az="Miqdar" ru="Количество" en="Amount" tr="Miktar" />
+  <T_AUTH az="Auten." ru="Аутентиф." en="Auth." tr="Yetki" />
+  <T_AVG az="Ortalama" ru="Среднее" en="Avg" tr="Ortalama" />
+  <T_AW az="ƏO" ru="СВ" en="AW" tr="EO" />
+  <T_BALANCE az="Saldo" ru="Баланс" en="Balance" tr="Bakiye" />
+  <T_BANK az="Bank" ru="Банк" en="Bank" tr="Banka" />
+  <T_BARCODE az="Barkod" ru="Баркод" en="Barcode" tr="Barkod" />
+  <T_BARCODE2 az="Barkod 2" ru="Баркод 2" en="Barcode 2" tr="Barcode 2" />
+  <T_BARCODE3 az="Barkod 3" ru="Баркод 3" en="Barcode 3" tr="Barcode 3" />
+  <T_BEGIN az="Baş" ru="Начало" en="Begin" tr="İlk" />
+  <T_CALCULATED az="Hesablanış" ru="Расчетная" en="Calculated" tr="Hesaplanmış" />
+  <T_CANCEL az="Iptal et" ru="Отмена" en="Cancel" tr="Kapat" />
+  <T_UNCANCEL az="Geri al" ru="Вернуть" en="Uncancel" tr="Geri al" />
+  <T_CASH az="Kassa" ru="Касса" en="Cash" tr="Kasa" />
+  <T_CASH_DEF az="Cash" ru="Касса" en="Cash" tr="Kasa Açk." />
+  <T_CHANGE az="Dəyişdir" ru="Изменить" en="Change" tr="Değiştir" />
+  <T_CLEAR az="Təmizlə" ru="Очистить" en="Clear" tr="Temizle" />
+  <T_CLIENT az="Müştəri" ru="Клиент" en="Client" tr="Müşteri" />
+  
+ 
+  <T_CODE az="Kod" ru="Код" en="Code" tr="Kod" />
+  <T_CODES az="Kodlar" ru="Код" en="Codes" tr="Kodlar" />
+  <T_COMMAND az="Əmr" ru="Комманда" en="Command" tr="Komutlar" />
+  <T_CONTROLFALGS az="Əlavə Göstər " ru="Əlavə Göstər " en="Control flags" tr="Ekler" />
+  <T_CREDIT az="Alacaq" ru="Кредит" en="Credit" tr="Alacak" />
+  <T_CURRENCY az="Valyuta" ru="Валюта" en="Currency" tr="Kur" />
+  <T_CURRENT az="Indiki" ru="Текущий" en="Current" tr="Şu anki" />
+  <T_CYPHCODE az="Yetki Kodu" ru="Код Безоп." en="Auth. Code" tr="Yetki Kodu" />
+  <T_DAILY az="Qünlük" ru="Daily" en="Daily" tr="Günlük" />
+ <T_DATE az="Tarix" ru="Дата" en="Date" tr="Tarih" />
+  <T_DATE_FROM az="Tarixdən" ru="От" en="From" tr="Tarihten" />
+  <T_DATE_RANGE az="İnterval" ru="Временной промежуток" en="Date Range" tr="Tarih aralığı" />
+   <T_DATE_TO az="Tarixə" ru="До" en="To" tr="Tarihe" />
+  <T_DAY az="Gün" ru="День" en="Day" tr="Gün" />
+  <T_DAYS az="Günlər" ru="Дни" en="Days" tr="Günler" />
+  <T_DEBIT az="Borc" ru="Дебит" en="Debit" tr="Borç" />
+  <T_DEFINITION az="Açıqlama" ru="Определение" en="Definition" tr="Açıklama" />
+  <T_DELETE az="Sil" ru="Удалить" en="Delete" tr="Sil" />
+  <T_DELIVERED az="Daşinib" ru="Доставлено" en="Delivered" tr="Teslim edildi" />
+  <T_DELIVERER az="Daşıyıcı" ru="Доставщик" en="Deliverer" tr="Taşıyıcı" />
+  <T_DELIVERY az="Daşınma" ru="Доставка" en="Delivery" tr="Taşıma" />
+  <T_DESCRIPTION az="Açıqlama" ru="Описание" en="Description" tr="Açıklama" />
+  <T_DETAILS az="Əlavələr" ru="Детали" en="Details" tr="Detaylar" />
+  <T_DIFFERENCE az="Fərq" ru="Разница" en="Diff." tr="Fark" />
+  <T_DIRECT az="Direk" ru="Непосредстаенно" en="Direct" tr="Direk" />
+  <T_DISCOUNT az="Endirim" ru="Скидка" en="Discount" tr="İndirim" />
+  <T_DO az="Do" ru="Сделать" en="Do" tr="Yapmak" />
+  <T_DOCNO az="Nömrə" ru="Номер док." en="Doc. No." tr="Fiş. Numarası" />
+  <T_DOCTOR az="Həkim Adı" ru="Həkim Adı" en="Doctor name" tr="Doktor Adı" />
+  <T_DOCUMENT az="Sənəd" ru="Документ" en="Document" tr="Fiş" />
+  <T_DRIVER az="Sürücü" ru="Водитель" en="Driver" tr="Sürücü" />
+  <T_EDIT az="Redaktə" ru="Изменить" en="Edit" tr="Düzenle" />
+  <T_EXCHANGE az="Val.Kursu" ru="Курс" en="Exchange" tr="Exchange" />
+  <T_EXCLUDE az="Haric" ru="Исключть" en="Exclude" tr="Hariç" />
+  <T_EXIT az="Çıxış" ru="Выход" en="Exit" tr="Çıkış" />
+  <T_EXPORT az="Eksport" ru="Экспорт" en="Export" tr="Dışarı aktarım" />
+  <T_END az="Son" ru="Конец" en="End" tr="Son" />
+  <T_FIFO az="FIFO" ru="FIFO" en="FIFO" tr="FIFO" />
+  <T_FILE az="Fayl" ru="Фаил" en="File" tr="Dosya" />
+  <T_FILTER az="Filtir" ru="Фильтр" en="Filter" tr="Filitre" />
+ 
+  <T_FINANCE az="Maliyyə" ru="Финансы" en="Finance" tr="Finans" />
+  <T_FIND az="Axtar" ru="Поиск" en="Find" tr="Arama" />
+  <T_FIRM az="Sirkət" ru="Фирма" en="Firm" tr="Firma" />
+  <T_FIRST az="Birinci" ru="Первый" en="First" tr="İlk" />
+  <T_FLAGS az="Nişan" ru="Nişan" en="Flags" tr="Flags" />
+  <T_GENERAL az="Ümumi" ru="Общий" en="General" tr="Genel" />
+   <T_GROUP az="Qrup" ru="Група" en="Group" tr="Grup" />
+  <T_GROUPCODE az="Qrup kod" ru="Qrup kod" en="Group Code" tr="Grup kodu" />
+  <T_GROUPED az="Gruplaşmış" ru="Сгруппированный" en="Grouped" tr="Gruplanmış" />
+  <T_HORISONTAL az="Horizontal" ru="Горизонтально" en="Horisontal" tr="Horizontal" />
+  <T_HOTKEY az="İsti düymələr" ru="İsti düymələr" en="Hotkey" tr="Kısa Tuşlar" />
+ <T_IMPORT az="Import" ru="Импорт" en="Import" tr="İçeri" />
+  <T_INCLUDE az="Dahil" ru="Включить" en="Include" tr="İçinde" />
+  <T_INFO az="Məlumat" ru="Информация" en="Info" tr="Bilgi" />
+  <T_INPUT az="Giriş" ru="Вхд." en="Input" tr="Giriş" />
+  <T_INPUT_AVG az="Dahil olanin ort." ru="Среднее от поступ." en="Input avg." tr="Ortalama girişi" />
+  <T_INPUTFROMPROD az="Uret.Gir." ru="Производство" en="Production" tr="Production" />
+  <T_INTERFACE az="Interfase" ru="Интерфасе" en="Interface" tr="Arayüz" />
+  <T_INVOICE az="Faktura" ru="Фактура" en="Invoice" tr="Faturalar" />
+  <T_QUANTITY az="Miqdar" ru="Кол." en="Quantity" tr="Miktar" />
+  <T_LANG az="Dil" ru="Язык" en="Language" tr="Dil" />
+  <T_LAST az="Sonuncu" ru="Последний" en="Last" tr="En son" />
+  <T_LIFO az="LIFO" ru="LIFO" en="LIFO" tr="LIFO" />
+  <T_LIST az="Siyah" ru="Список" en="List" tr="Liste" />
+  <T_LOAD az="Yükləmək" ru="Загрузка" en="Load" tr="Oluştur" />
+  <T_LOCAL az="Lokal" ru="Локально" en="Local" tr="Lokal" />
+  <T_GLOBAL az="Global" ru="Глобально" en="Global" tr="Global" />
+  <T_LOGIN az="Giriş" ru="Логин" en="Login" tr="Giriş" />
+  <T_MAIN az="Əsas" ru="Основ." en="Main" tr="Ana" />
+  <T_MARK az="Marka" ru="Марка" en="Mark" tr="Marka" />
+   
+  <T_MATERIAL az="Material" ru="Материал" en="Material" tr="Malzeme" />
+   
+  <T_MATERIALS az="Materiallar" ru="Материал" en="Materials" tr="Malzemeler" />
+  <T_MESSAGES az="İsmarıclar" ru="Послание" en="Messages" tr="Messages" />
+  <T_MONTHLY az="Ayliq" ru="Ежемесячно" en="Monthly" tr="Aylık" />
+  <T_MSG az="Məlumat" ru="Сообщение" en="Message" tr="Message" />
+  <T_NAME az="Ad" ru="Имя" en="Name" tr="İsim" />
+  <T_NEW az="Yeni" ru="Новая" en="New" tr="Yeni" />
+  <T_NO az="Yox" ru="Нет" en="No" tr="Yok" />
+  <T_NOTE az="Geyd" ru="Заметка" en="Note" tr="Ek Notlar " />
+  <T_OK az="Ok" ru="Принять" en="Ok" tr="Tamam" />
+  <T_ONLY_ZERO az="Ancaq sifirlar" ru="Только нулевые знач." en="Only zero" tr="Yalnız sıfır" />
+  <T_OTHER az="Başka" ru="Дрг." en="Other" tr="Başka" />
+  <T_OUTPUT az="Çıxış" ru="Вых." en="Output" tr="Çıkış" />
+  <T_PAID az="Ödənilib" ru="Оплачео" en="Paid" tr="Ödendi" />
+  <T_PASSIVE az="Pasiv" ru="Пассивный" en="Passive" tr="Pasiv" />
+  <T_PASSWORD az="Şifrə" ru="Пароль" en="Password" tr="Şifre" />
+  <T_PATIENT az="Xəstə" ru="Пациент" en="Patient" tr="Patient" />
+  <T_PERIOD az="Dönəm" ru="Период" en="Period" tr="Dönem" />
+  <T_PRESCRIPTION az="Resept" ru="Описание" en="Prescription" tr="Reçete" />
+  <T_PREVIEW az="Baxış" ru="Просмотр" en="Preview" tr="Önizleme" />
+  <T_PRICE az="Qiymət" ru="Цена" en="Price" tr="Fiyat" />
+  <T_PRINT az="Çap" ru="Печать" en="Print" tr="Yazdır" />
+  <T_PRIVATE az="Şəhsi" ru="Личный" en="Private" tr="Özel" />
+  <T_PROFIT az="Gəlir" ru="Прибыль" en="Profit" tr="Gelir" />
+  <T_PROMOTION az="Hədiyyə" ru="Акция" en="Promotion" tr="Promosyon" />
+  <T_PURCHASE az="Aliş" ru="Закупка" en="Purchase" tr="Satınalma" />
+  <T_PUT az="Goyulub" ru="Взято" en="Put" tr="Yerleştirmek" />
+  <T_REFRESH az="Təzələ" ru="Обновить" en="Refresh" tr="Yenile" />
+  <T_REMAIN az="Qaliq" ru="Остаток" en="Remain" tr="Bakiye" />
+  <T_REMAINDER az="Qalıq" ru="Остаток" en="Remainder" tr="Bakiye" />
+  <T_REPORT az="Report" ru="Отчет" en="Report" tr="Rapor" />
+  <T_REPORTING az="Raportlama" ru="Отчетность" en="Reporting" tr="Rapor" />
+  <T_REPORTS az="Raportlar" ru="Отчеты" en="Reports" tr="Raporlar" />
+  <T_RETURN az="Qaytarma" ru="Возврат" en="Return" tr="İade" />
+  
+  <T_SALE az="Satiş" ru="Продажа" en="Sale" tr="Satış" />
+  <T_SALES az="Satışlar" ru="Продажи" en="Sales" tr="Satış ve Dağıtım" />
+  <T_SAVE az="Qeyd et" ru="Запись" en="Save" tr="Kaydet" />
+  <T_SCRAP az="Sarf" ru="Брак." en="Scrap" tr="Fire" />
+  <T_SEARCH az="Axtar" ru="Поиск" en="Search" tr="Arama" />
+  <T_SELECT az="Sec" ru="Выбрать" en="Select" tr="Seç" />
+  <T_SELECTED az="Secilmiş" ru="Выбранные" en="Selected" tr="Seçilmiş" />
+  <T_SERVICE az="Sətirlər" ru="Строки" en="Lines" tr="Hizmetler" />
+  <T_SHPAGENT az="Taşıyıcı Firma" ru="Перевозчик" en="Delivery Firm" tr="Nakliyeci" />
+  <T_SORT az="Düzlə" ru="Сортировка" en="Sort" tr="Düzenle" />
+  <T_SPECIAL az="Hüsusi" ru="Спец." en="Special" tr="Özel" />
+  <T_SPECODE az="Özəl Kod" ru="Спец. Код" en="Spe. Code" tr="Özel kod" />
+  <T_STOCK_F az="Stok F." ru="Сток Ф." en="Stock F." tr="Stok F." />
+  <T_STOCK_R az="Stok R." ru="Сток Р." en="Stock R." tr="Stock R." />
+ 
+  <T_SUM az="Cəmi" ru="Сумма" en="Sum" tr="Toplam" />
+    <T_TAKE az="Götürülüb" ru="Положено" en="Take" tr="Taşındı" />
+  <T_TEXT az="Mətn" ru="Текст" en="Text" tr="Açıklama" />
+  <T_TOTAL az="Cəmi" ru="Итог" en="Total" tr="Toplam" />
+  <T_TOTAL_GROSS az="Ümumi Məblağ" ru="Брутто" en="Total Gross" tr="Toplam Brüt" />
+  <T_TOTAL_NET az="Cəmi net" ru="Нетто" en="Total Net" tr="Toplam Net" />
+   <T_TRANSACTION az="Hərəkət" ru="Операция" en="Transaction" tr="Hareket" />
+   <T_UNIT az="Ö. Vahidi" ru="Ед." en="Unit" tr="Birim" />
+    <T_UNLOAD az="Boşaltmaq" ru="Выгрузка" en="Unload" tr="Boşaltmak" />
+  <T_UNUSED az="Kullanilmayan" ru="Неиспользованные" en="Unused" tr="Kullanım dışı" />
+  <T_USAGE az="İstifadə" ru="Использ." en="Usage" tr="Kullanılanlar" />
+  <T_USER az="Istifadəçi" ru="Пользователь" en="User" tr="Kullanıcı" />
+  <T_VANSELLING az="Vanselinq" ru="Ванселлинг" en="Vanselling" tr="Satış elemanı" />
+  <T_VEHICLE az="Nəq.vas." ru="Тран.средство" en="Vehicle" tr="Arac" />
+   <T_VERTICAL az="Vertikal" ru="Вертикально" en="Vertical" tr="Vertical" />
+  <T_VOLUME az="Həcm" ru="Объем" en="Volume" tr="Ölçü" />
+    <T_WAREHOUSE az="Ambar" ru="Склад" en="Warehouse" tr="Ambar" />
+   <T_WEIGHT az="Kütlə" ru="Вес" en="Weight" tr="Ağırlık" />
+   <T_YES az="Hə" ru="Да" en="Yes" tr="Evet" />
+  <T_ZERO az="Sıfır" ru="Нуль" en="Zero" tr="Sıfır" />
+  <T_ZONE az="Zona" ru="Зона" en="Zone" tr="Bölge" />
+  <T_SURCHARGE az="Masraf" ru="Расход" en="Surcharge" tr="Masraf" />
+  <T_TYPE az="Tür" ru="Тип" en="Type" tr="Tür" />
+  <T_GTIP az="GTIP" ru="GTIP" en="GTIP" tr="GTIP" />
+ <T_CLOSE az="Bağla" ru="Закрыть" en="Close" tr="Kapat" />
+  <T_ISO az="ISO" ru="ISO" en="ISO" tr="ISO" />
+  <T_BRAND az="Brend" ru="Бренд" en="Brand" tr="Marka" />
+  <T_CONSOLIDATION az="Konsolidasyon" ru="Консолидация" en="Consolidation" tr="Konsolidasyon" />
+  <T_CUSTOMS az="Gömrük" ru="Таможня" en="Customs" tr="Gümrük" />
+  <T_VENDOR az="Satıcı" ru="Продавец" en="Vendor" tr="Satış elemanı" />
+  <T_TAX az="Vergi" ru="Налог" en="Tax" tr="Vergi" />
+  <T_PAYMENT az="Ödəniş" ru="Оплата" en="Payment" tr="Ödeme" />
+  <T_STATUS az="Status" ru="Статус" en="Status" tr="Durum" />
+  <T_LIFE az="Ömür" ru="Жизнь" en="Life" tr="Ömür" />
+  <T_MM az="Mİ" ru="УМ" en="MM" tr="Malzeme Yönetimi" />
+  <T_UNITS az="Birimlər" ru="Еденицы" en="Units" tr="Birimler" />
+  <T_GL az="Mühasibat" ru="Бухгалтерия" en="GL" tr="Muhasebe" />
+  <T_TRACKING az="İzləmə" ru="Отслеживание" en="Tarcking" tr="İzleme" />
+  <T_AUTH az="Səlahiyət" ru="Аутентиф." en="Auth" tr="Yetki" />
+  <T_GROUP az="Grup" ru="Группа" en="Group" tr="Grup" />
+  <T_TOP az="Üst" ru="Верхний" en="Top" tr="Yukarı" />
+  <T_PLACE az="Yer" ru="Место" en="Place" tr="Yer" />
+  <T_RETAIL az="Perakende" ru="Розничная" en="Retail" tr="Perakende satış" />
+  <T_WHOLESALE az="Topdan" ru="Оптовая" en="Wholesale" tr="Toptan satış" />
+  <T_PHOTO az="Şəkil" ru="Фото" en="Photo" tr="Resim" />
+  <T_SPECIAL az="Hüsusi" ru="Специальный" en="Special" tr="Özel" />
+  <T_SPECIAL2 az="Hüsusi 2" ru="Специальный 2" en="Special 2" tr="Özel 2" />
+  <T_SPECIAL3 az="Hüsusi 3" ru="Специальный 3" en="Special 3" tr="Özel 3" />
+  <T_SPECIAL4 az="Hüsusi 4" ru="Специальный 4" en="Special 4" tr="Özel 4" />
+  <T_SPECIAL5 az="Hüsusi 5" ru="Специальный 5" en="Special 5" tr="Özel 5" />
+  <T_WIDTH az="En" ru="Ширина" en="Width" tr="Genişlik" />
+  <T_LENGTH az="Uzunluq" ru="Длина" en="Length" tr="Uzunluk" />
+  <T_HEIGHT az="Hündürlük" ru="Высота" en="Height" tr="Yükseklik" />
+  <T_AREA az="Sahə" ru="Площадь" en="Area" tr="Alan" />
+  <T_CONVERT az="Çevirmə" ru="Конвертация" en="Convert" tr="Çevir" />
+  <T_VAT az="ƏDV" ru="НДС" en="VAT" tr="KDV" />
+  <T_UNITSET az="Birim Seti" ru="Комп. Едениц" en="Unit Set" tr="Birim Seti" />
+  
+  
+
+  <T_ORDER az="Sifariş" ru="Заказ" en="Order" tr="Siparişler" />
+ 
+  <T_VIEW az="Bahış" ru="Просмотр" en="View" tr="İncele" />
+  <T_OPEN az="Aç" ru="Открыть" en="Open" tr="Aç" />
+  <T_DATA az="Məlumat" ru="Данные" en="Data" tr="Veri" />
+  <T_SEND az="Göndər" ru="Послать" en="Send" tr="Kaydet" />
+  <T_RECEIVE az="Gəbul et" ru="Принять" en="Receive" tr="Kaydet" />
+  <T_COPY az="Kopyala" ru="Копировать" en="Copy" tr="Kopyala" />
+  <T_PRICELIST az="Qimət list." ru="Прайс лист" en="Price list" tr="Fiyat Listesi" />
+  <T_ENABLE az="İst. elə" ru="Использ." en="Enable" tr="Kullanımda" />
+  <T_DISABLE az="İst. eləmə" ru="Не исп." en="Disable" tr="Kullanım dışı" />
+  <T_MENU az="Menü" ru="Меню" en="Menu" tr="Menü" />
+  <!--  -->
+  <T_MSG_ERROR_ADD az="Əlavə etmə zamanı səhf !" ru="Ошибка при добавлении !" en="Error on adding!" tr="Ekleme hatası !" />
+  <T_MSG_ERROR_CONCURRENCY az="Qeyd redakte edilib !" ru="Запись была изменена !" en="Record has been changed !" tr="Kayıt düzenlendi !" />
+  <T_MSG_ERROR_CREATE az="Əlavə etmə zamanı səhf !" ru="Ошибка при создании !" en="Error on creating !" tr="Ekleme hatası !" />
+  <T_MSG_ERROR_DELETE az="Silinmə zamanı səhf !" ru="Ошибка при удалении !" en="Error on deliting !" tr="Silınme hatası !" />
+  <T_MSG_ERROR_EDIT az="Redaktə zamanı səhf !" ru="Ошибка при редактировании !" en="Error on editing !" tr="Düzenleme hatası !" />
+  <T_MSG_ERROR_INNER az="Daxili səhf" ru="Внутренняя ошибка !" en="Inner error !" tr="Hata !" />
+  <T_MSG_ERROR_INNER_SERVER az="Daxili səhf(server)" ru="Внутренняя ошибка(сервер) !" en="Inner error (server)!" tr="Hata (server) !" />
+  <T_MSG_ERROR_INNER_CLIENT az="Daxili səhf(klient)" ru="Внутренняя ошибка(клиент) !" en="Inner error (client)!" tr="Hata (Client) !" />
+  <T_MSG_ERROR_LOGINING az="Sistemə girş səhvi !" ru="Ошибка привходе в систему !" en="Login error !" tr="Giriş hatası !" />
+  <T_MSG_ERROR_NUMERATION az="Nömrələmə zamani səhv !" ru="Ошибка нумерации !" en="Numeration error!" tr="Numaralandırma hatası !" />
+  <T_MSG_ERROR_PRINT az="Çap zamani səhf !" ru="Ошибка при печати !" en="Error on printing !" tr="Yazıcı hatası !" />
+  <T_MSG_ERROR_RUNTIME az="Əməliyət zamani səhf !" ru="Ошибка времени выполнения !" en="Runtime error !" tr="İşlem hatası !" />
+  <T_MSG_ERROR_SAVE az="Saxlama zamanı səhf !" ru="Ошибка при сохранении !" en="Error on saving!" tr="Kayıt hatası !" />
+  <T_MSG_ERROR_UNDEF az="Naməlum səhf !" ru="Неопределенная ошибка !" en="Undefined error!" tr="Bilinmeyen hata !" />
+  <T_MSG_ERROR_TIMEOUT az="İşləm vahtı sona catdı !" ru="Таймаут операции !" en="Timeout error!" tr="İşlem sonlandı !" />
+  <T_MSG_ERROR_IO az="Oxuma-yazma səhfi !" ru="Ошибка чтения-записи !" en="IO error!" tr="Okuma-yazma hatası !" />
+  <T_MSG_ERROR_SCRIPT az="Skript səhfi !" ru="Ошибка скрипта !" en="Script error !" tr="Script hatası !" />
+  <T_MSG_ERROR_CONNECTION az="Bağlantı səhfi !" ru="Ошибка подключения !" en="Connection error !" tr="Bağlantı hatası !" />
+  <T_MSG_ERROR_NO_DATA az="Məlumat yoxdu" ru="Информация отсутствует" en="No data" tr="Veri yok" />
+  <T_MSG_FORM_CLOSE_CONFIRM az="Forma baglanılacak" ru="Форма будет закрыта" en="Form will be closed" tr="Form kapatılacak" />
+  <T_MSG_INVALID_AMOUNT az="Yalnış Tutar" ru="Неверное количество" en="Invalid amount" tr="Yanlış tutar" />
+  <T_MSG_INVALID_BARCODE az="Yalnış Barkod" ru="Неверный баркод" en="Invalid barcode" tr="Yanlış Barkod" />
+  <T_MSG_INVALID_DOC az="Səhv sənəd" ru="Неверный документ" en="Invalid doc" tr="Hatalı fiş" />
+  <T_MSG_INVALID_EXCHANGE az="Val.Kursu tapılmadı" ru="Ненайден курс валюты" en="Invalid cur.exchange" tr="Kur bulunamadı" />
+  <T_MSG_INVALID_FILE az="Yalniş fayl" ru="Неверный фаил" en="Invalid fail" tr="Dosya hatası" />
+  <T_MSG_INVALID_MATERIAL az="Səhv material" ru="Неверный товар" en="Invalid material" tr="Yanlış malzeme" />
+  <T_MSG_INVALID_PRICE az="Səhv qiymət" ru="Неверная цена" en="Invalid price" tr="Yanlış fiyat" />
+  <T_MSG_INVALID_RECODR az="Səhv qeyd" ru="Неверная запись" en="Invalid record" tr="Yanlış Kayıt" />
+  <T_MSG_INVALID_TOTAL az="Səhv cəm" ru="Неверный итог" en="Invalid total" tr="Yanlış toplam" />
+  <T_MSG_VALID_BARCODE az="Düz Barkod" ru="Верны баркод" en="Valid barcode" tr="Doğru Barkod" />
+  <T_MSG_EMPTY_DOC az="Boş sənəd" ru="Пустой документ" en="Empty doc" tr="Fiş boş" />
+  <T_MSG_INVALID_QUANTITY az="Yalnış miqdar" ru="Неверное количество" en="Invalid quantity" tr="Yanlış miktar" />
+  <T_MSG_SET_CLIENT az="Müştəri seçin" ru="Неуказан клиента" en="Set client" tr="Set client" />
+  <T_MSG_SET_MATERIAL az="Malzemə seçin" ru="Неуказан товар" en="Set material" tr="Malzeme seçin" />
+  <T_MSG_SET_WAREHOUSE az="Ambar seçin" ru="Неуказан склад" en="Set warehouse" tr="Ambar seçin" />
+  <T_MSG_SET_DATE az="Tarix seçin" ru="Неуказана дата" en="Set date" tr="Tarih seçin" />
+  <T_MSG_SET_DOCNUMBER az="Nömrə seçin" ru="Неуказан номер" en="Set doc number" tr="Fiş numarası tanımla" />
+  <T_MSG_SET_DIVISION az="Bölmə seçin" ru="Неуказано подразделение" en="Set division" tr="Bölüm seçin" />
+  <T_MSG_SET_DEPARTMENT az="Söbə seçin" ru="Неуказан департамент" en="set department" tr="Departman seçin" />
+  <T_MSG_SET_BRANCH az="Filial seçin" ru="Неуказан отдел" en="Set branch" tr="Şube seçin" />
+  <T_MSG_SET_SPECODE az="Özəl kod seçin" ru="Неуказан личный код" en="Set aux code" tr="Özel kod seçin" />
+  <T_MSG_SET_GRPCODE az="Grup kodu seçin" ru="Неуказан код группы" en="Set group code" tr="Grup kodu seçin" />
+  <T_MSG_SET_CYPHCODE az="Yetki kodu seçin" ru="Неуказан код доступа" en="Set auth code" tr="Yetki kodu seçin" />
+  <T_MSG_SET_CODE az="Kod seçin" ru="Неуказан код" en="Set code" tr="Kod seçin" />
+  <T_MSG_SET_NAME az="Ad seçin" ru="Неуказано имя" en="Set name" tr="İsim seçin" />
+  <T_MSG_SET_DESCRIPTION az="Aciqlama seçin" ru="Неуказано описание" en="Set description" tr="Açıklama seçin" />
+  <T_MSG_SET_TYPE az="Türü seçin" ru="Неуказан тип" en="Set type" tr="Tür seçin" />
+  <T_MSG_SET_QUANTITTY az="Miqdar seçin" ru="Неуказано количество" en="Set quantity" tr="Miktar seçin" />
+  <T_MSG_SET_PRICE az="Qiymət seçin" ru="Неуказана цена" en="Set price" tr="Fiyat seçin" />
+  <T_MSG_SET_TOTAL az="Cəm seçin" ru="Неуказан итог" en="Set total" tr="Toplam seçin" />
+  <T_MSG_SET_DISCOUNT az="Endirim seçin" ru="Неуказана скидка" en="Set discount" tr="İndirim seçin" />
+  <T_MSG_SET_TAX az="Verqi seçin" ru="Неуказан налог" en="Set tax" tr="KDV seçin" />
+  <T_MSG_SET_CASH az="Kassa seçin" ru="Неуказана касса" en="Set cash" tr="Kasa seçin" />
+  <T_MSG_SET_ACCOUNT az="Hesab seçin" ru="Неуказан счет" en="Set account" tr="Hesap seçin" />
+  <T_MSG_SET_REQFIELDS az="Məlumat tam qeyd olunmayib" ru="Заполните обязательные поля" en="Set req. fields" tr="Tam kayıt olunmadı" />
+  <T_MSG_COMMIT_OPERATION_ABORT az="İşləm uğursuz sona catsin ?" ru="Прервать ?" en="Abort operation ?" tr="Başarısız işlem ?" />
+  <T_MSG_COMMIT_OPERATION_STOP az="İşləm diyandırılsın ?" ru="Остановить ?" en="Stop operation" tr="İşlem dursun ?" />
+  <T_MSG_COMMIT_BEGIN az="Başla ?" ru="Приступить ?" en="Begin ?" tr="Başlasın ?" />
+  <T_MSG_COMMIT_CLOSE az="Bağla ?" ru="Закрыть ?" en="Close ?" tr="Kapansın ?" />
+  <T_MSG_COMMIT_EXIT az="Çıx ?" ru="Выйти ?" en="Exit ?" tr="Çıkış ?" />
+  <T_MSG_COMMIT_DELETE az="Qeyd silinəcək !" ru="Запись будет удалена !" en="Delete ?" tr="Kayıt silinsin ?" />
+  <T_MSG_COMMIT_PRINT az="Capa gondərmək ?" ru="Отправить на печать ?" en="Print ?" tr="Yazdırılsın ?" />
+  <T_MSG_DATA_TRANSFER az="Məlumat mubadiləsi" ru="Обмен данными" en="Data exchange" tr="Veri değiş" />
+  <T_MSG_DATA_READING az="Məlumat oxunması" ru="Чтение данных" en="data reading" tr="Veri okunuyor" />
+  <T_MSG_DATA_WRITING az="Məlumat yazılması" ru="Запись данных" en="Data writing" tr="Veri yazılıyor" />
+  <T_MSG_DATA_SENDING az="Məlumat qöndərməsi" ru="Отправка данных" en="Data sending" tr="Veri gönderiliyor" />
+  <T_MSG_DATA_RECEIVING az="Məlumat qəbul olunması" ru="Прием данных" en="Data receiving" tr="Veri alınıyor" />
+  <T_MSG_DATA_NO az="Məlumat yoxdu" ru="Информация отсутствует" en="No data" tr="Veri bulunamadı" />
+  <T_MSG_DATA_OLD az="Məlumat təzələnməmişdi" ru="Информация небыла обнавлена" en="Data has not been changed" tr="Veri düzenlenmemiş" />
+  <T_MSG_DATA_SAVING az="Məlumat sahlanılması" ru="Сохранение данных" en="Data saving" tr="Veri kaydediliyor" />
+  <T_MSG_DATA_DELETING az="Məlumat silinməsi" ru="Удаление данных" en="Data deliting" tr="Veri siliniyor" />
+  <T_MSG_DATA_IMPORT az="Məlumat import olunması" ru="Импортирование данных" en="Data import" tr="Veri içeri alınıyor" />
+  <T_MSG_DATA_EXPORT az="Məlumat eksport olunması" ru="Экспорт данных" en="Data export" tr="Veri dışarı alınıyor" />
+  <T_MSG_DATA_REPEAT az="Məlumat təkrarlanması" ru="Данные повторяются" en="Data repeats" tr="Veri tekrarı" />
+  <T_MSG_DOCS_DELETING az="Sənədlərin silinməsi" ru="удаление документов" en="Docs deliting" tr="Fişler siliniyor" />
+  <T_MSG_DOC_REPEAT az="Sənəd təkrarlanması" ru="Повторение документа" en="Doc repeats" tr="Tekrarlanan fişler" />
+  <T_MSG_RECORD_REPEAT az="Qeyd təkrarlanması" ru="Повторение записи" en="Record repeats" tr="Kayıt tekrarı !" />
+  <T_MSG_EMPTY_INVOICE az="Boş Faktura" ru="Пустая фактура" en="Empty invoice" tr="Boş Faktura" />
+  <T_MSG_LASTINVOICE az="Faktura Nr.:" ru="Номер док." en="Last invoice" tr="Fatura Nr.:" />
+  <T_MSG_STOCK_NEGATIVE_LEVEL az="Stok seviyesi mənfi di!" ru="Негативный уровень товара!" en="Negative slock!" tr="Negatif stok seviyesi!" />
+  <T_MSG_OPERATION_OK az="İşləm uğurlu sona catdı" ru="Действие закончилось успешно" en="Operation finished normaly" tr="İşlem başarıyla sonlandı" />
+  <T_MSG_OPERATION_FAILED az="İşləm uğursuz sona catdı" ru="Действие закончилось неуспешно" en="Operation failed" tr="işlem başarısız sonlandı" />
+  <T_MSG_OPERATION_STARTING az="İşləm başlayir" ru="Начало действия" en="Operation starting" tr="İşlem başlıyor" />
+  <T_MSG_OPERATION_FINISHING az="İşləm sona çatır" ru="Конец действия" en="Operation finishing" tr="İşlem sonlandı !" />
+  <T_MSG_OPERATION_CANCELLING az="İşləm iptal olunur" ru="Действие было прервано" en="Operation cancelling" tr="İşlem iptal oldu" />
+  <T_MSG_OPERATION_STOPPING az="İşləm durdurulur" ru="Действие приостановлено" en="Operation stopping" tr="İşlem durduruluyor" />
+  <T_MSG_OPERATION_CURRENT az="İşləm" ru="Текущее действие" en="Current operation" tr="İşlem" />
+  <T_MSG_RECORD_NOT_SYNCED az="Qeyd mubadilə olunmayib" ru="Запись не синхронизирована" en="Record not synced" tr="Record not synced" />
+  <!--  -->
+ 
+  <T_DOC_COUNT_EXCESS az="Sayım Fazlası Fişi" ru="Квитанция Излишков" en="Cycle Count Slip (Excess)" tr="Cycle Count Slip (Excess)" />
+  <T_DOC_COUNT_DEFICIT az="Sayim Eksiği Fişi" ru="Квитанция Недосдачи" en="Cycle Count Slip (Deficit)" tr="Cycle Count Slip (Deficit)" />
+  <T_MAT_COUNT az="Sayim" ru="Инвентаризация" en="Cycle Count" tr="Cycle Count" />
+  <T_DOC_STOCK_TRANS az="Stok Hərəkətləri" ru="Движения Товаров" en="Stock Trans." tr="Stok Hareket" />
+  <T_DOC_STOCK_ORDERS az="Stok Sifarişləri" ru="Заказы на Товары" en="Stock Orders" tr="Stok Sipariş" />
+  <T_DOC_FINANCE az="Maliyə Sənədləri" ru="Фин. Документы" en="Finance Docs" tr="Fiş Finans" />
+ 
+  <T_ADP_FIN_DOC_CASH_INPUT az="Kassa mədahil" ru="Поступление в кассу" en="Cash collection" tr="Kasa Tahsilat" />
+  <T_ADP_FIN_DOC_CASH_OUTPUT az="Kassa məxaric" ru="Отпуск из кассы" en="Cash payment" tr="Kasa Ödeme" />
+  <T_ADP_MM_DOC_DEFICIT az="Sayim Eksiği" ru="Квит.Недосдачи" en="Cycle Count (Deficit)" tr="Sayim Eksiği" />
+  <T_ADP_MM_DOC_EXCESS az="Sayım Fazlası" ru="Квит.Излишков" en="Cycle Count (Excess)" tr="Sayım Fazlası" />
+  <T_ADP_MM_DOC_WAREHOUSE_ORDER_COUNTING az="Sayım" ru="Инвентаризация" en="Counting" tr="Sayım" />
+  <T_ADP_MM_DOC_WAREHOUSE_ORDER_INPUT az="Giriş (Ambar)(Sifariş)" ru="Поступление (Амбар)(Заказ)" en="Input (Warehouse)(Order)" tr="Giriş (Ambar)(Sipariş)" />
+  <T_ADP_MM_DOC_WAREHOUSE_ORDER_LIST az="Siyah (Sifariş)" ru="Список (Заказ)" en="List (Order)" tr="Liste (Sipariş)" />
+  <T_ADP_MM_DOC_WAREHOUSE_ORDER_OUTPUT az="Çıxış(Ambar)(Sifariş)" ru="Отпуск (Амбар)(Заказ)" en="Output(Warehouse)(Order)" tr="Çıkış (Ambar)(Sipariş)" />
+  <T_ADP_MM_DOC_WAREHOUSE_SLIP_INPUT az="Giriş (Ambar)" ru="Поступление (Амбар)" en="Input(Warehouse)" tr="Giriş (Ambar)" />
+  <T_ADP_MM_DOC_WAREHOUSE_SLIP_OUTPUT az="Çıxış (Ambar)" ru="Отпуск (Амбар)" en="Output(Warehouse)" tr="Çıkış (Ambar)" />
+  <T_ADP_PRCH_DOC_PURCHASE_ORDER_RETURN az="Sifariş (Alış)(İadə)" ru="Заказ (Закупка)(Возврат)" en="Order (Purchase)(Return)" tr="Sipariş (Alış)(İade)" />
+  <T_ADP_PRCH_DOC_PURCHASE_ORDER az="Sifariş (Alış)" ru="Заказ (Закупка)" en="Order (Purchase)" tr="Sipariş (Alış)" />
+  <T_ADP_PRCH_DOC_PURCHASE_RETURN az="Alış İadə" ru="Воз. Закупки" en="Purchase Ret." tr="Alış (İade)" />
+  <T_ADP_PRCH_DOC_PURCHASE az="Alış" ru="Закупка" en="Purchase" tr="Alış" />
+  <T_ADP_SLS_DOC_WHOLESALE_ORDER_RETURN az="Sifariş (Satış)(İadə)" ru="Заказ (Продажа)(Возврат)" en="Order (Sale)(Return)" tr="Sipariş (Satış)(İade)" />
+  <T_ADP_SLS_DOC_WHOLESALE_ORDER az="Sifariş (Satış)" ru="Заказ (Продажа)" en="Order (Sale)" tr="Sipariş (Satış)" />
+  <T_ADP_SLS_DOC_WHOLESALE_RETURN az="Satış İadə" ru="Воз. Продажи" en="Sale Ret." tr="Satış (İade)" />
+  <T_ADP_SLS_DOC_WHOLESALE az="Satış" ru="Продажа" en="Sale" tr="Satış" />
+  <T_ADP_SLS_DOC_ZERO_ORDER az="Sifariş" ru="Заказ" en="Order" tr="Sipariş" />
+  <T_FORM_MAIN az="Menu" ru="Меню" en="Menu" tr="Menu" />
+  <T_REF_FIN_DOC_CASH_INPUT az="Kassa mədahil" ru="Поступление в кассу" en="Cash collection" tr="Kasa Tahsilat" />
+  <T_REF_FIN_DOC_CASH_OUTPUT az="Kassa məxaric" ru="Отпуск из кассы" en="Cash payment" tr="Kasa Ödeme" />
+ 
+  <T_REF_FIN_REC_CLIENT az="Müştəri" ru="Клиент" en="Client" tr="Müşteri" />
+  <T_REF_GEN_BARCODE_MAT_PROMO az="Barkod (Mat. Promo)" ru="Баркод (Мат. Промо)" en="Barcode (Mat. Promo)" tr="Barkod (Promo)" />
+  <T_REF_GEN_BARCODE_MAT az="Barkod (Mat.)" ru="Баркод (Мат.)" en="Barcode (Mat.)" tr="Barkod" />
+  <T_REF_GEN_DATE az="Tarih" ru="Дата" en="Date" tr="Tarih" />
+  <T_REF_GEN_NUM_PERC az="Parameter %" ru="Параматр %" en="Parameter %" tr="Paramtre %" />
+  <T_REF_GEN_NUM az="Parameter" ru="Параматр" en="Parameter" tr="Parametre" />
+  <T_REF_GEN_STRING az="Mətn" ru="Строка" en="Text" tr="Açıklama" />
+  <T_REF_MM_DOC_DEFICIT az="Sayim Eksiği (51)" ru="Квит.Недосдачи (51)" en="Cycle Count (Deficit) (51)" tr="Sayim Eksiği (51)" />
+  <T_REF_MM_DOC_EXCESS az="Sayım Fazlası (50)" ru="Квит.Излишков (50)" en="Cycle Count (Excess) (50)" tr="Sayım Fazlası (50)" />
+  <T_REF_MM_DOC_WAREHOUSE_ORDER_COUNTING az="Sayım (Sifariş)" ru="Инвентаризация (Заказ)" en="Counting (Order)" tr="Sayım Sipariş" />
+  <T_REF_MM_DOC_WAREHOUSE_ORDER_INPUT az="Giriş (Ambar)(Sifariş)" ru="Поступление (Амбар)(Заказ)" en="Input (Warehouse)(Order)" tr="Giriş (Ambar)(Sipariş)" />
+  <T_REF_MM_DOC_WAREHOUSE_ORDER_LIST az="Siyah (Sifariş)" ru="Список (Заказ)" en="List (Order)" tr="Liste (Sipariş)" />
+  <T_REF_MM_DOC_WAREHOUSE_ORDER_OUTPUT az="Çıxiş (Ambar)(Sifariş)" ru="Отпуск (Амбар)(Заказ)" en="Output (Warehouse)(Order)" tr="Çıkış (Ambar)(Sipariş)" />
+  <T_REF_MM_DOC_WAREHOUSE_SLIP_INPUT az="Giriş (Ambar)" ru="Поступление (Амбар)" en="Input(Warehouse)" tr="Giriş (Ambar)" />
+  <T_REF_MM_DOC_WAREHOUSE_SLIP_OUTPUT az="Çıxiş (Ambar)" ru="Отпуск (Амбар)" en="Output (Warehouse)" tr="Çıkış (Ambar)" />
+  <T_REF_MM_REC_MAT_PROMO az="Mallar Promo" ru="ТМЗ Промо" en="Material Promo" tr="Malzeme Promo" />
+  <T_REF_MM_REC_MAT az="Mallar" ru="ТМЗ" en="Material" tr="Malzeme" />
+  <T_REF_PRCH_DOC_PURCHASE_ORDER_RETURN az="Sifariş (Alış)(İadə)" ru="Заказ (Закупка)(Возврат)" en="Order (Purchase)(Return)" tr="Sipariş (Alış)(İade)" />
+  <T_REF_PRCH_DOC_PURCHASE_ORDER az="Sifariş (Alış)" ru="Заказ (Закупка)" en="Order (Purchase)" tr="Alış Sipariş" />
+  <T_REF_PRCH_DOC_PURCHASE_RETURN az="Alış İadə" ru="Возврат Закупки" en="Purchase Retrun" tr="Alış İade" />
+  <T_REF_PRCH_DOC_PURCHASE az="Alış" ru="Закупка" en="Purchase" tr="Alış" />
+  <T_REF_SLS_DOC_WHOLESALE_ORDER_RETURN az="Sifariş (İadə)" ru="Заказ (Возврат)" en="Return(Order)" tr="İade (Sipariş)" />
+  <T_REF_SLS_DOC_WHOLESALE_ORDER az="Sifariş (Satış)" ru="Заказ (Продажа)" en="Order (Sale)" tr="Sipariş (Satış)" />
+  <T_REF_SLS_DOC_WHOLESALE_RETURN az="İadə" ru="Возврат" en="Retrun" tr="İade" />
+  <T_REF_SLS_DOC_WHOLESALE az="Satış" ru="Продажа" en="Sale" tr="Satış" />
+  <T_REF_SLS_DOC_ZERO_ORDER az="Sifariş" ru="Заказ" en="Order" tr="Sipariş" />
+  <T_TOOL_EDIT_ITEMVARS az="Parameter" ru="Параматры" en="Parameters" tr="Parametre" />
+  <T_TOOL_LOG az="Məlumat" ru="Инфо" en="Info" tr="Log" />
+  <T_TOOL_SHOWDATA az="Məlumat" ru="Инфо" en="Info" tr="Bilgi" />
+
+  <T_RISK az="Risk" ru="Риск" en="Risk" tr="Risk" />
+  <T_LIMIT az="Limit" ru="Лимит" en="Limit" tr="Limit" />
+
+  <T_MIN az="Min." ru="Мин." en="Min" tr="Min." />
+  <T_MAX az="Maks." ru="Макс." en="Max" tr="Mak." />
+  
+</settings>

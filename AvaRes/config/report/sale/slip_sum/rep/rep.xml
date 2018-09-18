@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report replace="ə,e;Ə,E;I,I;ı,i;İ,I;Ş,S;ş,s;Ç,C;ç,c;Ö,O;ö,o;Ğ,G;ğ,g;Ü,U;ü,u">
+
+	<cmd type="addColumn" name="AMOUNTSEL"  table="LINES" exp="IIF(UINFO2>0,AMOUNT*UINFO1/UINFO2,0)" />
+	<cmd type="addColumn" name="PRICESEL"  table="LINES" exp="IIF(UINFO1>0,PRICE*UINFO2/UINFO1,0)" />
+	<cmd type="addColumn" name="LASTBALANCE"  table="CLIENT" exp="BALANCE+SALE-SRETURN-CASH" />
+	
+	<cmd type="text">
+		$(println)
+		$("                               SATIŞ                            ") $(println)
+		$("    Ambar: ") $(sys,"MOB_SYS_AGENT_NAME") $(println)
+	</cmd>
+	<cmd type="table" table="HEADER"  filter="" sort="">
+		$(formatln,"    Tarix: {0:dd-MM-yyyy HH:mm}",HEADER.DATE_)
+	</cmd>
+	<cmd type="table" table="CLIENT"  filter="" sort="">
+		$(formatln,"    Musteri: {0}",CLIENT.DEFINITION_)
+	</cmd>
+
+
+	<cmd type="text">
+		$("---------------------------------------------------------------------") $(println)
+		$("| N|           Malin adi           | O\V | Miqdari| Qiymet | Mebleg |") $(println)
+		$("---------------------------------------------------------------------") $(println)
+		$(set,LINENUM,0)
+	</cmd>
+
+	<cmd type="table" table="LINES"  filter="LINETYPE=0" sort="STDOCLNNO ASC">
+		$(set,LINENUM,sum,LINENUM,1)
+		$(formatln,"|{0,2}|{1,-31}|{2,5}|{3,8:N2}|{4,8:N2}|{5,8:N2}|",LINENUM,LINES.NAME,LINES.UNIT,LINES.AMOUNTSEL,LINES.PRICESEL,LINES.TOTAL)
+	</cmd>
+	<cmd type="table" table="HEADER"  filter="" sort="">
+
+		$(set,DICOUNTPROMO,HEADER.TOTALPROMOTIONS)
+		$(set,DICOUNTGLOB,HEADER.ADDDISCOUNTS)
+		$(set,DICOUNTLOC,sum,HEADER.TOTALDISCOUNTS,-HEADER.TOTALPROMOTIONS,-HEADER.ADDDISCOUNTS)
+		$(set,DICOUNTTOT,sum,DICOUNTLOC,DICOUNTGLOB)
+		$(set,MATTOTAL,sum,HEADER.GROSSTOTAL,-HEADER.TOTALPROMOTIONS)
+
+		$("---------------------------------------------------------------------") $(println)
+
+		
+		$(formatln,"      cemi:           {0:N2}",MATTOTAL)
+		</cmd>
+	<cmd type="table" table="HEADER"  filter="(TOTALDISCOUNTS-TOTALPROMOTIONS)>0.001" sort="">
+		$(formatln,"      endirim:        {0:N2}",DICOUNTTOT)
+		$(formatln,"      yekun cem:      {0:N2}",HEADER.NETTOTAL)
+	</cmd>
+	<cmd type="table" table="HEADER"  filter="" sort="">
+		$(formatln,"      Son borc:       {0:N2}",CLIENT.LASTBALANCE)
+	
+		$(println)
+	</cmd>
+	<cmd type="text">
+        $("      Tehvil verdi: _______________________________") $(println)
+		$(println)
+		$("      Tehvil aldi : _______________________________") $(println)
+        $(println)
+		$(println)
+		$(println)
+	
+	</cmd>
+	
+</report>

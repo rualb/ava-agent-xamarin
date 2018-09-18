@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	<alias value="HEADER" />
+	<ds value="ds.sql" />
+	<filter value="filter.xml" />
+	<render value="T_MAIN,rep\rep.xml" />
+
+</settings>

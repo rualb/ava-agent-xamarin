@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report replace="ə,e;Ə,E;I,I;ı,i;İ,I;Ş,S;ş,s;Ç,C;ç,c;Ö,O;ö,o;Ğ,G;ğ,g;Ü,U;ü,u">
+	<cmd type="text">
+		$(set,HEADER.BALANCE,toDouble,0)
+		$(set,SALE.TOTAL,toDouble,0)
+		$(set,RETURN.TOTAL,toDouble,0)
+		$(set,CASH.TOTAL,toDouble,0)
+
+		$(println)
+		$("              Müştəri            ")
+		$(println)
+		$("Ambar: ")
+		$(sys,"MOB_SYS_AGENT_NAME")
+		$(println)
+		$("Tarix: ")
+		$(format,"{0}",SYS_DATE)
+		$(println)
+	</cmd>
+	<cmd type="table" table="HEADER"  filter="" sort="">
+		$(formatln,"Kodu: {0}",HEADER.CODE)
+		$(formatln,"Adı: {0}",HEADER.DEFINITION_)
+		$(formatln,"Merkezde borc: {0:N2}",HEADER.BALANCE)
+	</cmd>
+	<cmd type="table" table="SALE"  filter="" sort="">
+		$(formatln,"Satiş: {0:N2}",SALE.TOTAL)
+	</cmd>
+	<cmd type="table" table="RETURN"  filter="" sort="">
+		$(formatln,"İadə: {0:N2}",RETURN.TOTAL)
+	</cmd>
+	<cmd type="table" table="CASH"  filter="" sort="">
+		$(formatln,"Kassa: {0:N2}",CASH.TOTAL)
+	</cmd>
+	<cmd type="text">
+		$(set,LASTBALANCE,sum,HEADER.BALANCE,SALE.TOTAL,-RETURN.TOTAL,-CASH.TOTAL)
+		$(formatln,"Yekun borc: {0:N2}",LASTBALANCE)
+	</cmd>
+</report>

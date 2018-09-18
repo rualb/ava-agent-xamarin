@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report replace="Ə,e;ə,e">
+
+	<cmd type="addColumn" name="AMOUNT2"  table="LINES" exp="AMOUNT+2" />
+ 
+	<cmd type="text">
+		$("              T_SALE                     ")
+		$(println)
+		$(println)
+		$("           T_CODE                  T_NAME")
+		$(println)
+	</cmd>
+
+	<cmd type="group" table="LINES"  list="LINETYPE">
+		<cmd type="text" > $(formatln,"Group begin : {0}",LINES.LINETYPE)</cmd>
+		<cmd type="group" table="LINES"  list="AMOUNT">
+			<cmd type="aggr" name="AMOUNTSUM"  table="LINES" exp="sum" col="AMOUNT2"/>
+			<cmd type="aggr" name="ROWSCOUNT"  table="LINES" exp="count" />
+			<cmd type="aggr" name="DIST"  table="LINES" exp="distinct" col="AMOUNT"/>
+			<cmd type="text" >$(formatln,"	Group begin : {0} sum: {1} count: {2} dist: {3}",LINES.AMOUNT,AMOUNTSUM,ROWSCOUNT,DIST)</cmd>
+			<cmd type="table" table="LINES">$(formatln,"	{0,25}{1,25}{2,25}",LINES.CODE,LINES.NAME,LINES.AMOUNT)</cmd>
+			<cmd type="text">$("	Group end") $(println)</cmd>
+
+		</cmd>
+		<cmd type="text"> $("Group end") $(println) </cmd>
+	</cmd>
+</report>

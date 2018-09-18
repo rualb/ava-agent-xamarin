@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report replace="ə,e;Ə,E;I,I;ı,i;İ,I;Ş,S;ş,s;Ç,C;ç,c;Ö,O;ö,o;Ğ,G;ğ,g;Ü,U;ü,u">
+	<cmd type="text">
+		$(println)
+		$("      Satış-Qaytarma-Kassa")
+		$(println)
+		$("Ambar: ")
+		$(sys,"MOB_SYS_AGENT_NAME")
+		$(println)
+		$("Tarix: ")
+		$(format,"{0:dd-MM-yyyy HH-mm-ss}",SYS_DATE)
+		$(println)
+	</cmd>
+	<cmd type="text">
+		$("------------------------------------------")
+		$(println)
+	</cmd>
+	<cmd type="aggr" name="SALETOTAL"  table="SALE" exp="sum" col="TOTAL"/>
+	<cmd type="aggr" name="RETURNTOTAL"  table="RETURN" exp="sum" col="TOTAL"/>
+	<cmd type="aggr" name="CASHINTOTAL"  table="CASHIN" exp="sum" col="TOTAL"/>
+ 
+	<cmd type="text">
+		$(format,"{0,-16}{1,7:N2} AZN","Satış:",SALETOTAL)
+		$(println)
+	</cmd>
+	<cmd type="table" table="SALE"  filter="" sort="">
+		$(format,"{0,-5:HH-mm} {1,-25} {2,8:N2} {3,1}",SALE.DATE_,SALE.NAME,SALE.TOTAL,SALE.GENEXP1)
+		$(println)
+	</cmd>
+	<cmd type="text">
+		$("------------------------------------------")
+		$(println)
+	</cmd>
+	<cmd type="text">
+		$(format,"{0,-16}{1,7:N2} AZN","Qaytarma:",RETURNTOTAL)
+		$(println)
+	</cmd>
+	<cmd type="table" table="RETURN"  filter="" sort="">
+		$(format,"{0,-5:HH-mm} {1,-25} {2,8:N2} {3,1}",RETURN.DATE_,RETURN.NAME,RETURN.TOTAL,RETURN.GENEXP1)
+		$(println)
+	</cmd>
+	<cmd type="text">
+		$("------------------------------------------")
+		$(println)
+	</cmd>
+	<cmd type="text">
+		$(format,"{0,-16}{1,7:N2} AZN","Kassa Mədaxil:",CASHINTOTAL)
+		$(println)
+	</cmd>
+	<cmd type="table" table="CASHIN"  filter="" sort="">
+		$(format,"{0,-5:HH-mm} {1,-25} {2,8:N2} {3,1}",CASHIN.DATE_,CASHIN.NAME,CASHIN.TOTAL,CASHIN.GENEXP1)
+		$(println)
+	</cmd>
+	<cmd type="text">
+		$("------------------------------------------")
+		$(println)
+	</cmd>
+	<cmd type="table" table="PROFIT"  filter="" sort="">
+		$(format,"{0,-14}{1,8:N2}","Satış:",PROFIT.SALES)
+		$(println)
+		$(format,"{0,-14}{1,8:N2}","Qaytarma:",PROFIT.SALESRET)
+		$(println)
+		$(format,"{0,-14}{1,8:N2}","Net Satış:",PROFIT.SALESNET)
+		$(println)
+		$(format,"{0,-14}{1,8:N2}","~ Qazanc:",PROFIT.PROFIT)
+		$(println)
+	</cmd>
+	<cmd type="text">
+		$("------------------------------------------")
+		$(println)
+	</cmd>
+	<cmd type="text">
+		$(println)
+		$(println)
+	</cmd>
+</report>

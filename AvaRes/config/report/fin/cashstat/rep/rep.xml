@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report replace="ə,e;Ə,E;I,I;ı,i;İ,I">
+	<cmd type="text">
+		$(println)
+		$("              Kassa hesabati            ")
+		$(println)
+		$("Ambar: ")
+		$(sys,"MOB_SYS_AGENT_NAME")
+		$(println)
+		$("Tarix: ")
+		$(format,"{0}",SYS_DATE)
+		$(println)
+		$("Musteri                           Mebleg")
+		$(println)
+		$(println)
+	</cmd>
+	<cmd type="table" table="LINES"  filter="" sort="">
+		$(format,"{0,-40}{1,10:N2}",LINES.NAME,LINES.TOTAL)
+		$(println)
+	</cmd>
+	<cmd type="aggr" name="SUMTOTAL"  table="LINES" exp="sum" col="TOTAL"/>
+	<cmd type="text">
+		$("---------------------------------------")
+		$(println)
+		$(format,"Cemi: {0:N2}",SUMTOTAL)
+		$(println)
+		$(println)
+		$(println)
+	</cmd>
+</report>

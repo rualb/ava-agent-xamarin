@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report replace="ə,e;Ə,E;I,I;ı,i;İ,I;Ş,S;ş,s;Ç,C;ç,c;Ö,O;ö,o;Ğ,G;ğ,g;Ü,U;ü,u">
+ 
+
+ 
+	 
+			<cmd type="table" table="LINES"  filter="" sort="NAME" lineRepeat="AMOUNT">
+				$(formatln,"{0,-40}",LINES.NAME)
+				$(formatln,"#barcode,{0}#",LINES.CODE)
+			</cmd>
+ 
+ 
+	<cmd type="text">
+		$(println)
+		$(println)
+	</cmd>
+</report>

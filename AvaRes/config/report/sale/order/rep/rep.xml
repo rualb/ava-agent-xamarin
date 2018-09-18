@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+	<cmd type="text">
+		$("              T_SALE                     ")
+		$(println)
+		$(println)
+		$("           T_CODE                  T_NAME")
+		$(println)
+	</cmd>
+	<cmd type="table" table="LINES"  filter="" sort="">
+		$(format,"{0,25}{1,25}",LINES.CODE,LINES.NAME)
+		$(println)
+	</cmd>
+</report>

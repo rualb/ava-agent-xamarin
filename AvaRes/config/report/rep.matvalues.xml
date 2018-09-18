@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+	<cmd type="addColumn" table="ITEMS"  name="ONHAND1" exp="IIF(UNITCF1>0,ONHAND*UNITCF1/UNITCF1,0)" />
+	<cmd type="addColumn" table="ITEMS"  name="ONHAND2" exp="IIF(UNITCF2>0,ONHAND*UNITCF1/UNITCF2,0)" />
+	<cmd type="addColumn" table="ITEMS"  name="ONHAND3" exp="IIF(UNITCF3>0,ONHAND*UNITCF1/UNITCF3,0)" />
+	<cmd type="table" table="ITEMS"  filter="" sort="">
+		$(format,"T_CODE	:{0}",ITEMS.CODE)$(println)
+		$(format,"T_NAME	:{0}",ITEMS.NAME)$(println)
+	</cmd>
+	<cmd type="table" table="ITEMS"  filter="UNIT1 > '' AND ONHAND >= 0" sort="">
+		$("T_QUANTITY")$(println)
+		$(format,"{0,-10}	{1,10:N2}",ITEMS.UNIT1,ITEMS.ONHAND1)$(println)
+	</cmd>
+	<cmd type="table" table="ITEMS"  filter="UNIT2 > '' AND ONHAND >= 0" sort="">
+		$(format,"{0,-10}	{1,10:N2}",ITEMS.UNIT2,ITEMS.ONHAND2)$(println)
+	</cmd>
+	<cmd type="table" table="ITEMS"  filter="UNIT3 > '' AND ONHAND >= 0" sort="">
+		$(format,"{0,-10}	{1,10:N2}",ITEMS.UNIT3,ITEMS.ONHAND3)$(println)
+	</cmd>
+</report>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report replace="ə,e;Ə,E;I,I;ı,i;İ,I">
+
+	<cmd type="addColumn" name="AMOUNTSEL"  table="LINES" exp="IIF(UINFO2>0,AMOUNT*UINFO1/UINFO2,0)" />
+	<cmd type="addColumn" name="PRICESEL"  table="LINES" exp="IIF(UINFO1>0,PRICE*UINFO2/UINFO1,0)" />
+	<cmd type="addColumn" name="LASTBALANCE"  table="CLIENT" exp="BALANCE+SALE-SRETURN-CASH" />
+	
+	<cmd type="text">
+		$(println)
+		$("                ALIS                   ")
+		$(println)
+		$("Ambar: ")
+		$(sys,"MOB_SYS_AGENT_NAME")
+		$(println)
+	</cmd>
+	<cmd type="table" table="HEADER"  filter="" sort="">
+		$(formatln,"Tarix: {0}",HEADER.DATE_)
+	</cmd>
+	<cmd type="table" table="CLIENT"  filter="" sort="">
+		$(formatln,"Musteri: {0}",CLIENT.DEFINITION_)
+		$(formatln,"Borc qaliq: {0:N2}",CLIENT.LASTBALANCE)
+	</cmd>
+	<cmd type="table" table="HEADER"  filter="" sort="">
+		$(formatln,"Endirim: {0} %",HEADER.DISCPER)
+		$(formatln,"{0}",HEADER.GENEXP1)
+	</cmd>
+
+	<cmd type="text">
+		$("---------------------------------------------") $(println)
+		$("| N|               Malin adi                |") $(println)
+		$("| Qiymet | Sayi |Ed. |      Mebleg        |") $(println)
+		$("---------------------------------------------") $(println)
+		$(set,LINENUM,0)
+	</cmd>
+
+	<cmd type="table" table="LINES"  filter="LINETYPE=0" sort="STDOCLNNO ASC">
+		$(set,LINENUM,sum,LINENUM,1)
+		$(formatln,"|{0,2}|{1,45}|",LINENUM,LINES.NAME)
+		$(formatln,"|{0,8:N2}|{1,6:N2}|{2,4}|{3,17:N2}|",LINES.PRICESEL,LINES.AMOUNTSEL,LINES.UNIT,LINES.TOTAL)
+	</cmd>
+	<cmd type="table" table="HEADER"  filter="" sort="">
+
+		$(set,DICOUNTPROMO,HEADER.TOTALPROMOTIONS)
+		$(set,DICOUNTGLOB,HEADER.ADDDISCOUNTS)
+		$(set,DICOUNTLOC,sum,HEADER.TOTALDISCOUNTS,-HEADER.TOTALPROMOTIONS,-HEADER.ADDDISCOUNTS)
+		$(set,DICOUNTTOT,sum,DICOUNTLOC,DICOUNTGLOB)
+		$(set,MATTOTAL,sum,HEADER.GROSSTOTAL,-HEADER.TOTALPROMOTIONS)
+
+		$("---------------------------------------------") $(println)
+
+		$(formatln,"Cemi: {0:N2}",MATTOTAL)
+		$(formatln,"Endirim: {0:N2}",DICOUNTTOT)
+		$(formatln,"Yekun: {0:N2}",HEADER.NETTOTAL)
+		
+		$(println)
+	</cmd>
+	<cmd type="text">
+
+		$("Tehvil verdi: _______________________________") $(println)
+		$(println)
+		$("Tehvil aldi : _______________________________") $(println)
+
+	</cmd>
+	
+</report>

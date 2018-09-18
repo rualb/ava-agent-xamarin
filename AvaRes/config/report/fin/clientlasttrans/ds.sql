@@ -1,0 +1,10 @@
+select
+CL.CODE,
+CL.DEFINITION_,
+CL.LASTTRANS
+from
+LG_$FIRM$_CLCARD CL
+where
+CL.LOGICALREF = @lref 
+GO
+ 

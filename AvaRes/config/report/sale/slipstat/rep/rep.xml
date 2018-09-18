@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report replace="ə,e;Ə,E" enc="ibm857">
+	<cmd type="text">
+		$("[0x1B]@")
+		$(println)
+		$("[0x1B]!8")
+		$(println)
+		$("        Satıs hesabatı")
+		$(println)
+		$("[0x1B]@")
+		$(println)
+		$("Ambar: ")
+		$(sys,"MOB_SYS_AGENT_NAME")
+		$(println)
+		$("Tarix: ")
+		$(format,"{0}",SYS_DATE)
+		$(println)
+		$("Müsteri                           Mebleğ")
+		$(println)
+		$("Endirim                           Yekun")
+		$(println)
+		$(println)
+	</cmd>
+	<cmd type="table" table="LINES"  filter="" sort="">
+		$(format,"{0,-40}{1,10:N2}",LINES.NAME,LINES.TOTAL)
+		$(println)
+		$(format,"{0,-20:N2}{1,10:N2}{2,5}",LINES.DISCOUNT,LINES.TOTALNET,LINES.GENEXP1)
+		$(println)
+	</cmd>
+	<cmd type="aggr" name="SUMTOTAL"  table="LINES" exp="sum" col="TOTAL"/>
+	<cmd type="aggr" name="SUMDISCOUNT"  table="LINES" exp="sum" col="DISCOUNT"/>
+	<cmd type="aggr" name="SUMTOTALNET"  table="LINES" exp="sum" col="TOTALNET"/>
+	<cmd type="text">
+		$("---------------------------------------")
+		$(println)
+		$(format,"Cemi: {0:N2}",SUMTOTAL)
+		$(println)
+		$(format,"Endirim: {0:N2}",SUMDISCOUNT)
+		$(println)
+		$(format,"Yekun: {0:N2}",SUMTOTALNET)
+		$(println)
+		$(println)
+		$(println)
+	</cmd>
+</report>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+	<cmd type="text">
+		$("              Client                     ")
+		$(println)
+		$(println)
+		$("           Name                  Code                    Name         ")
+		$(println)
+	</cmd>
+	<cmd type="table" table="INFO_DATA"  filter="" sort="">
+		$(format,"{0,25}{1,25}{2,25}",INFO_DATA.DEFINITION_,INFO_DATA.CODE,INFO_DATA.DEFINITION_)
+		$(println)
+	</cmd>
+</report>

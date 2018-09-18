@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report replace="ə,e;Ə,E;I,I;ı,i;İ,I">
+	<!--<cmd type="addColumn" name="REMAIN"  table="LINES" exp="AMOUNT" />-->
+	<cmd type="text">
+		$(println)
+		$("            Ambar qalıqları            ")
+		$(println)
+		$("Malin adi                               Sayi")
+		$(println)
+		$("--------------------------------------------")
+		$(println)
+	</cmd>
+
+ 
+		<cmd type="group" table="LINES" list="STGRPCODESUB" filter="AMOUNT > 0">
+			<cmd type="text">
+				$(formatln,"* {0}",LINES.STGRPCODESUB)
+			</cmd>
+			<cmd type="table" table="LINES"  filter="" sort="NAME">
+				$(formatln,"{0,-35} {1,8:N2}",LINES.NAME,LINES.AMOUNT)
+			</cmd>
+ 
+	</cmd>
+	<cmd type="text">
+		$("--------------------------------------------")
+		$(println)
+		$(println)
+	</cmd>
+</report>

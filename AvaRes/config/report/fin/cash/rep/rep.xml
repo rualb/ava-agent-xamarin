@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report replace="ə,e;Ə,E;I,I;ı,i;İ,I;Ş,S;ş,s;Ç,C;ç,c;Ö,O;ö,o;Ğ,G;ğ,g;Ü,U;ü,u;">
+ 
+	<cmd type="addColumn" name="LASTBALANCE"  table="CLIENT" exp="BALANCE+SALE-SRETURN-CASH" />
+
+	<cmd type="text">
+		$(println)
+		$("           KASSA MƏDAXIL           ")
+		$(println)
+		$("Ambar: ")
+		$(sys,"MOB_SYS_AGENT_NAME")
+		$(println)
+	</cmd>
+	<cmd type="table" table="HEADER"  filter="" sort="">
+		$(formatln,"Tarix: {0:dd-MM-yyyy HH:mm}",HEADER.DATE_)
+	</cmd>
+	<cmd type="table" table="CLIENT"  filter="" sort="">
+		$(formatln,"Musteri: {0}",CLIENT.DEFINITION_)
+		$(formatln,"Borc qaliq: {0:N2}",CLIENT.LASTBALANCE)
+	</cmd>
+	<cmd type="table" table="HEADER"  filter="" sort="">
+		$(formatln,"Cemi: {0:N2}",HEADER.AMOUNT)
+	</cmd>
+	<cmd type="text">
+		$(println)
+		$("Tehvil verdi: _______________________________") $(println)
+		$(println)
+		$("Tehvil aldi : _______________________________") $(println)
+	</cmd>
+
+</report>

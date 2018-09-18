@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<report replace="ə,e;Ə,E;I,I;ı,i;İ,I;Ş,S;ş,s;Ç,C;ç,c;Ö,O;ö,o;Ğ,G;ğ,g;Ü,U;ü,u">
+ 
+	<cmd type="text">
+		$(println)
+		$("Müştərinin Mərkəzdə Son Əməliyatları")
+		$(println)
+		$("Ambar: ")
+		$(sys,"MOB_SYS_AGENT_NAME")
+		$(println)
+		$("Tarix: ")
+		$(format,"{0:dd-MM-yyyy}",SYS_DATE)
+		$(println)
+	</cmd>
+	<cmd type="table" table="HEADER"  filter="" sort="">
+		$(formatln,"Kodu: {0}",HEADER.CODE)
+		$(formatln,"Adı: {0}",HEADER.DEFINITION_)
+		$(println)
+		$(set,LASTTRANS,get,HEADER.LASTTRANS)
+		$(set,LASTTRANS,replace,LASTTRANS,"TR1,","Kassa Mədaxil,")
+		$(set,LASTTRANS,replace,LASTTRANS,"TR2,","Kassa Məxaric,")
+		$(set,LASTTRANS,replace,LASTTRANS,"TR33,","Qaytarma,")
+		$(set,LASTTRANS,replace,LASTTRANS,"TR38,","Satış,")
+		$(set,LASTTRANS,replace,LASTTRANS,"TR31,","Alış Qayt.,")
+		$(set,LASTTRANS,replace,LASTTRANS,"TR36,","Alış,")
+		$(formatlistarr,"{0,-17} {1:dd-MM-yyyy} {2,10:n2}",LASTTRANS,@newline,string,date,double)
+		$(println)
+		$(println)
+		$(println)
+	</cmd>
+ 
+ 
+</report>
