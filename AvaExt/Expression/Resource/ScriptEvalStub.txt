@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Deployment ;
+using System.Data ;
+using System.Xml ;
+using System.Drawing ;
+using System.Windows.Forms;
+            
+namespace EvalNamespace 
+{
+    public class EvalClass
+    {
+         public object main($PARAMETERS$)
+         {
+         $BODY$
+         return null;
+         }
+         
+         object IIF(bool b,object v1,object v2)
+         {
+			return (b?v1:v2);
+         }
+    }
+}
