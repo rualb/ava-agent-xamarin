@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1"
+    style="@style/Panel">
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:layout_width="match_parent"
+        style="@style/LinePadH" />
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:id="@+id/cPanelAmount"
+        p1:gravity="center"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        style="@style/Panel">
+        <TextView
+            p1:text="T_QUANTITY"
+            p1:gravity="center_vertical"
+            style="@style/Label" />
+        <EditText
+            p1:id="@+id/cAmount"
+            style="@style/NumberNoClick"
+            p1:tag="type::num"
+            p1:editable="false" />
+        <TextView
+            p1:id="@+id/textView3"
+            style="@style/ButtonClickDummy" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:id="@+id/cPanelPrice"
+        p1:gravity="center"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        style="@style/Panel">
+        <TextView
+            p1:text="T_PRICE"
+            p1:gravity="center_vertical"
+            style="@style/Label"
+            p1:id="@+id/textView2" />
+        <EditText
+            p1:id="@+id/cPrice"
+            style="@style/NumberNoClick"
+            p1:tag="type::num"
+            p1:editable="false" />
+        <TextView
+            p1:id="@+id/textView3"
+            style="@style/ButtonClickDummy" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:gravity="center"
+        p1:id="@+id/cPanelUnit"
+        style="@style/Panel">
+        <TextView
+            p1:text="T_UNIT"
+            p1:gravity="center_vertical"
+            style="@style/Label"
+            p1:id="@+id/cLabelUnit" />
+        <EditText
+            p1:id="@+id/cUnit"
+            style="@style/Number"
+            p1:editable="false" />
+        <Button
+            p1:id="@+id/cBtnUnit"
+            style="@style/ButtonClick" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:id="@+id/cPanelDiscount"
+        p1:gravity="center"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        style="@style/Panel">
+        <TextView
+            p1:text="T_DISCOUNT"
+            p1:gravity="center_vertical"
+            style="@style/Label" />
+        <EditText
+            p1:id="@+id/cDiscount"
+            style="@style/NumberNoClick"
+            p1:tag="type::num"
+            p1:editable="false" />
+        <TextView
+            p1:id="@+id/textView3"
+            style="@style/ButtonClickDummy" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:id="@+id/cPanelTotal"
+        p1:gravity="center"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        style="@style/Panel">
+        <TextView
+            p1:text="T_TOTAL"
+            p1:gravity="center_vertical"
+            style="@style/Label"
+            p1:id="@+id/textView1" />
+        <EditText
+            p1:id="@+id/cTotal"
+            style="@style/NumberNoClick"
+            p1:tag="type::num"
+            p1:editable="false" />
+        <TextView
+            p1:id="@+id/textView3"
+            style="@style/ButtonClickDummy" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:id="@+id/cNumInput"
+        p1:layout_width="match_parent"
+        p1:tag="type::numinput"
+        p1:layout_height="wrap_content" />
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/cPanelData"
+        p1:gravity="center"
+        style="@style/Panel">
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/cPanelDataWrap"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content">
+            <LinearLayout
+                p1:orientation="horizontal"
+                p1:minWidth="1px"
+                p1:minHeight="1px"
+                p1:layout_width="wrap_content"
+                p1:layout_height="match_parent"
+                p1:id="@+id/linearLayout5">
+                <TextView
+                    style="@style/LabelDummy"
+                    p1:id="@+id/textView4"
+                    p1:layout_height="1px" />
+                <TextView
+                    style="@style/TextDummy"
+                    p1:id="@+id/textView5"
+                    p1:layout_height="1px" />
+                <TextView
+                    style="@style/ButtonClickDummy"
+                    p1:id="@+id/textView6"
+                    p1:layout_height="1px" />
+            </LinearLayout>
+            <TextView
+                p1:id="@+id/cData"
+                style="@style/TextAreaInfo"
+                p1:layout_height="match_parent"
+                p1:layout_width="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:id="@+id/linearLayout4"
+        p1:gravity="center|bottom"
+        p1:layout_height="match_parent">
+        <Button
+            p1:text="T_CANCEL"
+            p1:id="@+id/cBtnCancel"
+            style="@style/Button" />
+        <Button
+            p1:text="T_OK"
+            p1:id="@+id/cBtnOk"
+            style="@style/Button" />
+    </LinearLayout>
+</LinearLayout>

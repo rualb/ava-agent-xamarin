@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1"
+    style="@style/Panel">
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="10dp" />
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout2"
+        p1:gravity="center">
+        <TextView
+            p1:text="T_DATE"
+            p1:gravity="center_vertical"
+            style="@style/Label" />
+        <EditText
+            p1:id="@+id/cDate"
+            style="@style/Text"
+            p1:tag="type::date"
+            p1:editable="false"
+            p1:inputType="none" />
+        <Button
+            p1:id="@+id/cBtnDate"
+            style="@style/ButtonClick" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:id="@+id/linearLayout5"
+        style="@style/LineH" />
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout3"
+        p1:gravity="center">
+        <TextView
+            p1:text="T_NAME"
+            p1:gravity="center_vertical"
+            style="@style/Label" />
+        <EditText
+            p1:id="@+id/cName"
+            style="@style/Text" />
+        <Button
+            p1:id="@+id/cBtnName"
+            style="@style/ButtonClick" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout3"
+        p1:gravity="center">
+        <TextView
+            p1:text="T_CODE"
+            p1:gravity="center_vertical"
+            style="@style/Label" />
+        <EditText
+            p1:id="@+id/cCode"
+            style="@style/Text" />
+        <Button
+            p1:id="@+id/cBtnCode"
+            style="@style/ButtonClick" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout3"
+        p1:gravity="center">
+        <TextView
+            p1:text="T_BARCODE"
+            p1:gravity="center_vertical"
+            style="@style/Label" />
+        <EditText
+            p1:id="@+id/cBarcode"
+            style="@style/Text" />
+        <TextView
+            style="@style/ButtonClickDummy" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        style="@style/LineH" />
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout3"
+        p1:gravity="center">
+        <TextView
+            p1:text="T_TOTAL"
+            p1:gravity="center_vertical"
+            style="@style/Label"
+            p1:id="@+id/textView1" />
+        <EditText
+            p1:id="@+id/cAmount"
+            style="@style/Text"
+            p1:tag="type::num"
+            p1:editable="false" />
+        <Button
+            p1:id="@+id/cBtnAmount"
+            style="@style/ButtonClick" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        style="@style/LineH"
+        p1:id="@+id/linearLayout6" />
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout3"
+        p1:gravity="center">
+        <TextView
+            p1:text="T_DESCRIPTION"
+            p1:gravity="center_vertical"
+            style="@style/Label" />
+        <EditText
+            p1:id="@+id/cDesc"
+            style="@style/Text" />
+        <Button
+            p1:id="@+id/cBtnDesc"
+            style="@style/ButtonClick" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayout4"
+        p1:gravity="center|bottom">
+        <Button
+            p1:text="T_CLOSE"
+            p1:id="@+id/cBtnCancel"
+            style="@style/Button" />
+        <Button
+            p1:text="T_SAVE"
+            p1:id="@+id/cBtnOk"
+            style="@style/Button" />
+    </LinearLayout>
+</LinearLayout>

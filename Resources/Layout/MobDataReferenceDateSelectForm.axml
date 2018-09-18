@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1"
+    style="@style/Panel">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="280dp"
+        p1:id="@+id/linearLayout2">
+        <DatePicker
+            p1:layout_width="match_parent"
+            p1:layout_height="140dp"
+            p1:id="@+id/cDate" />
+        <TimePicker
+            p1:layout_width="match_parent"
+            p1:layout_height="140dp"
+            p1:id="@+id/cTime" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayout3"
+        p1:gravity="center|bottom">
+        <Button
+            p1:text="T_CANCEL"
+            p1:id="@+id/cBtnCancel"
+            style="@style/Button" />
+        <Button
+            p1:text="T_OK"
+            p1:id="@+id/cBtnOk"
+            style="@style/Button" />
+    </LinearLayout>
+</LinearLayout>

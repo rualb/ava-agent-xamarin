@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1"
+    style="@style/Panel">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:id="@+id/linearLayout3"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:layout_weight="1">
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/cPanelFilter"
+            p1:layout_marginBottom="1px"
+            style="@style/Panel"
+            p1:layout_weight="30"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp">
+            <ExpandableListView
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:id="@+id/cTreeF"
+                p1:tag="type::tree"
+                p1:layout_width="match_parent"
+                style="@style/Tree"
+                p1:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/cPanelFilter2"
+            p1:layout_marginBottom="1px"
+            style="@style/Panel"
+            p1:layout_weight="30"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp">
+            <GridView
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_width="match_parent"
+                p1:layout_height="match_parent"
+                p1:id="@+id/cGridFL1"
+                p1:layout_gravity="left"
+                p1:layout_weight="60"
+                p1:tag="type::grid"
+                style="@style/Grid"
+                p1:paddingRight="1px" />
+            <GridView
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_height="match_parent"
+                p1:id="@+id/cGridFL2"
+                p1:layout_width="match_parent"
+                p1:layout_weight="40"
+                p1:tag="type::grid"
+                style="@style/Grid" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:gravity="center"
+            p1:id="@+id/cPanelFilter3"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content">
+            <EditText
+                p1:id="@+id/cFilterText"
+                style="@style/Text"
+                p1:inputType="text"
+                p1:imeOptions="actionSearch"
+                p1:layout_weight="1"
+                p1:layout_marginLeft="10px" />
+            <Button
+                p1:id="@+id/cBtnClean"
+                style="@style/ButtonClick"
+                p1:background="@android:drawable/ic_menu_close_clear_cancel"
+                p1:layout_marginLeft="10px"
+                p1:text=" " />
+            <Button
+                p1:id="@+id/cBtnSearch"
+                style="@style/ButtonClick"
+                p1:background="@android:drawable/ic_menu_search"
+                p1:layout_marginLeft="10px"
+                p1:text=" "
+                p1:layout_marginRight="10px" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/cPanelGrid"
+            style="@style/Panel"
+            p1:layout_weight="75">
+            <GridView
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:id="@+id/cGrid"
+                p1:tag="name::cGrid type::grid"
+                style="@style/Grid"
+                p1:layout_width="match_parent"
+                p1:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:id="@+id/relativeLayout1"
+        p1:layout_height="wrap_content">
+        <Button
+            p1:id="@+id/cBtnMenu"
+            style="@style/ButtonClick"
+            p1:layout_alignParentRight="true"
+            p1:background="@drawable/ic_action_overflow"
+            p1:text=" " />
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:layout_toRightOf="@id/cBtnClean"
+            p1:layout_centerInParent="true">
+            <Button
+                p1:text="T_CANCEL"
+                p1:id="@+id/cBtnCancel"
+                style="@style/Button" />
+            <Button
+                p1:text="T_ADD"
+                p1:id="@+id/cBtnAdd"
+                style="@style/Button" />
+            <Button
+                p1:text="T_OK"
+                p1:id="@+id/cBtnOk"
+                style="@style/Button" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

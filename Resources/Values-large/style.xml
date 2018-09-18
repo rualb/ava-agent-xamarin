@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+  <dimen name="text1">16sp</dimen>
+  <dimen name="text2">18sp</dimen>
+  <dimen name="text3">20sp</dimen>
+
+  <dimen name="height1">50dp</dimen>
+  <dimen name="height2">60dp</dimen>
+  <dimen name="height3">90dp</dimen>
+
+  <dimen name="width1">60dp</dimen>
+  <dimen name="width2">160dp</dimen>
+  <dimen name="width3">280dp</dimen>
+
+
+  <dimen name="padding1">4dp</dimen>
+  <dimen name="padding2">8dp</dimen>
+  
+</resources>

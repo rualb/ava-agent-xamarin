@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1"
+    style="@style/Panel">
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:id="@+id/cContext"
+        p1:gravity="center"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:layout_weight="1">
+        <ScrollView
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:id="@+id/cContextScroll">
+            <TextView
+                p1:id="@+id/cData"
+                style="@style/TextArea"
+                p1:layout_width="match_parent"
+                p1:layout_height="match_parent"
+                p1:editable="false" />
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:id="@+id/relativeLayout1"
+        p1:layout_height="wrap_content">
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/linearLayout3"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:layout_centerInParent="true">
+            <Button
+                p1:text="T_CLOSE"
+                p1:id="@+id/cBtnCancel"
+                style="@style/Button" />
+            <Button
+                p1:text="T_PRINT"
+                p1:id="@+id/cBtnOk"
+                style="@style/Button" />
+        </LinearLayout>
+        <Button
+            p1:id="@+id/cBtnMenu"
+            style="@style/ButtonClick"
+            p1:layout_alignParentRight="true"
+            p1:background="@drawable/ic_action_overflow"
+            p1:text=" " />
+    </RelativeLayout>
+</LinearLayout>

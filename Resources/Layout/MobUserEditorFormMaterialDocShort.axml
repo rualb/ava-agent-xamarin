@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1"
+    style="@style/Panel">
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:gravity="center"
+        p1:id="@+id/cPanelFin"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content">
+        <TextView
+            p1:text="T_NAME"
+            p1:gravity="center_vertical"
+            style="@style/Label"
+            p1:id="@+id/textView9" />
+        <EditText
+            p1:id="@+id/cName"
+            style="@style/Text" />
+        <Button
+            p1:id="@+id/cBtnName"
+            style="@style/ButtonClick" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:gravity="center"
+        p1:id="@+id/linearLayout15"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content">
+        <TextView
+            p1:text="T_DESCRIPTION"
+            p1:gravity="center_vertical"
+            style="@style/Label"
+            p1:id="@+id/textView7" />
+        <EditText
+            p1:id="@+id/cDesc"
+            style="@style/Text" />
+        <Button
+            p1:id="@+id/cBtnDesc"
+            style="@style/ButtonClick" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:id="@+id/linearLayout6"
+        p1:layout_width="match_parent"
+        p1:gravity="center"
+        p1:layout_weight="1"
+        p1:layout_height="0dp">
+        <GridView
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/cGrid2"
+            p1:tag="type::grid name::cGrid2"
+            style="@style/Grid"
+            p1:layout_width="match_parent"
+            p1:layout_weight="30"
+            p1:layout_height="0dp" />
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:gravity="center|bottom"
+            p1:layout_weight="15"
+            p1:layout_height="0dp"
+            p1:id="@+id/linearLayout20">
+            <Button
+                p1:id="@+id/cBtnDoDelete"
+                style="@style/ButtonClickGroupItem"
+                p1:background="@drawable/ic_action_remove"
+                p1:layout_marginRight="8dp" />
+            <Button
+                p1:id="@+id/cBtnDoUseBarcode"
+                style="@style/ButtonClickGroupItem"
+                p1:layout_marginLeft="8dp"
+                p1:layout_marginRight="8dp" />
+            <Button
+                p1:id="@+id/cBtnDoAddPromoGlob"
+                style="@style/ButtonClickGroupItem"
+                p1:background="@drawable/ic_action_add_group"
+                p1:layout_marginLeft="8dp"
+                p1:layout_marginRight="8dp" />
+            <Button
+                p1:id="@+id/cBtnDoAddPromo"
+                style="@style/ButtonClickGroupItem"
+                p1:background="@drawable/ic_action_add_person"
+                p1:layout_marginLeft="8dp"
+                p1:layout_marginRight="8dp" />
+            <Button
+                p1:id="@+id/cBtnDoAdd"
+                style="@style/ButtonClickGroupItem"
+                p1:background="@drawable/ic_action_new"
+                p1:layout_marginLeft="8dp" />
+        </LinearLayout>
+        <GridView
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:id="@+id/cGrid"
+            style="@style/Grid"
+            p1:tag="type::grid name::cGrid"
+            p1:layout_weight="65"
+            p1:layout_height="0dp" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:gravity="center|bottom"
+        p1:id="@+id/linearLayout16"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_weight="0">
+        <Button
+            p1:text="T_CLOSE"
+            p1:id="@+id/cBtnCancel"
+            style="@style/Button" />
+        <Button
+            p1:text="T_SAVE"
+            p1:id="@+id/cBtnOk"
+            style="@style/Button" />
+    </LinearLayout>
+</LinearLayout>

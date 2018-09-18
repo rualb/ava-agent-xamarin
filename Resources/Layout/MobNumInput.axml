@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent">
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout2"
+        p1:gravity="center">
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:text="1"
+            p1:tag="1" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:text="2"
+            p1:tag="2" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:text="3"
+            p1:tag="3" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:tag="/"
+            p1:text="/" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:tag="MC"
+            p1:text="MC" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:tag="B"
+            p1:text="B" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout3"
+        p1:gravity="center">
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:text="4"
+            p1:tag="4" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:text="5"
+            p1:tag="5" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:tag="6"
+            p1:text="6" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:tag="*"
+            p1:text="*" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:text="MS"
+            p1:tag="MS" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:text="C"
+            p1:tag="C" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout4"
+        p1:gravity="center">
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:tag="7"
+            p1:text="7" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:tag="8"
+            p1:text="8" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:tag="9"
+            p1:text="9" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:tag="-"
+            p1:text="-" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:text="MR"
+            p1:tag="MR" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:tag="R"
+            p1:text="+/-" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout5"
+        p1:gravity="center">
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:tag="="
+            p1:text="=" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:tag="0"
+            p1:text="0" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:tag="."
+            p1:text="." />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:text="+"
+            p1:tag="+" />
+        <Button
+            style="@style/ButtonClickGroupItem"
+            p1:tag="MP"
+            p1:text="M+" />
+        <Button
+            style="@style/ButtonClickGroupItem" />
+    </LinearLayout>
+</LinearLayout>

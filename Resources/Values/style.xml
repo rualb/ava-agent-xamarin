@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <dimen name="text1">13sp</dimen>
+  <dimen name="text2">14sp</dimen>
+  <dimen name="text3">16sp</dimen>
+
+  <dimen name="height1">30dp</dimen>
+  <dimen name="height2">40dp</dimen>
+  <dimen name="height3">50dp</dimen>
+
+  <dimen name="width1">40dp</dimen>
+  <dimen name="width2">100dp</dimen>
+  <dimen name="width3">200dp</dimen>
+
+
+  <dimen name="padding1">2dp</dimen>
+  <dimen name="padding2">4dp</dimen>
+
+  <color name="colorGridHeaderBackground">#ff333333</color>
+  <color name="colorGridHeaderText">#ffEEEEEE</color>
+  <color name="colorGridCellBackground">#ff555555</color>
+  <color name="colorGridCellText">#ffEEEEEE</color>
+  <color name="colorGridSelectedBackground">#ff0040FF</color>
+  <color name="colorGridSelectedText">#ffEEEEEE</color>
+
+
+
+  <style name="Tabs">
+
+  </style>
+
+  <style name="Panel">
+    <item name="android:padding">0dp</item>
+  </style>
+  <style name="LineV">
+    <item name="android:layout_width">1dp</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:background">#ffb0b0b0</item>
+    <item name="android:minWidth">1px</item>
+    <item name="android:minHeight">1px</item>
+  </style>
+  <style name="LineH">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1px</item>
+    <item name="android:background">#ffa0a0a0</item>
+    <item name="android:minWidth">1px</item>
+    <item name="android:minHeight">1px</item>
+    <item name="android:layout_marginBottom">@dimen/padding2</item>
+    <item name="android:layout_marginTop">@dimen/padding2</item>
+  </style>
+  <style name="LinePadH">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:minWidth">1px</item>
+    <item name="android:minHeight">1px</item>
+  </style>
+  <style name="ButtonClickGroupItem">
+    <item name="android:layout_width">@dimen/height3</item>
+    <item name="android:layout_height">@dimen/height3</item>
+    <item name="android:textSize">@dimen/text2</item>
+  </style>
+  <style name="ButtonClick">
+    <item name="android:layout_width">@dimen/width1</item>
+    <item name="android:layout_height">@dimen/height2</item>
+    <item name="android:text">...</item>
+  </style>
+  <style name="ButtonClickDummy">
+    <item name="android:layout_width">@dimen/width1</item>
+    <item name="android:layout_height">@dimen/height2</item>
+    <item name="android:text"></item>
+  </style>
+  <style name="Button">
+    <item name="android:layout_width">@dimen/width2</item>
+    <item name="android:layout_height">@dimen/height2</item>
+    <item name="android:textSize">@dimen/text1</item>
+    <item name="android:paddingTop">0dp</item>
+    <item name="android:paddingBottom">0dp</item>
+    <item name="android:paddingLeft">@dimen/padding2</item>
+    <item name="android:paddingRight">@dimen/padding2</item>
+  </style>
+
+  <style name="ButtonClickToolItem">
+    <item name="android:layout_width">@dimen/width2</item>
+    <item name="android:layout_height">@dimen/height1</item>
+    <item name="android:textSize">@dimen/text2</item>
+  </style>
+
+
+  <style name="Text">
+    <item name="android:layout_width">@dimen/width3</item>
+    <item name="android:layout_height">@dimen/height2</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:textSize">@dimen/text1</item>
+  </style>
+  <style name="TextDummy">
+    <item name="android:layout_width">@dimen/width3</item>
+    <item name="android:layout_height">@dimen/height2</item>
+  </style>
+  <style name="TextArea">
+    <item name="android:singleLine">false</item>
+    <item name="android:textSize">@dimen/text1</item>
+    <item name="android:typeface">monospace</item>
+    <item name="android:padding">@dimen/padding2</item>
+  </style>
+
+  <style name="TextAreaInfo">
+    <item name="android:singleLine">false</item>
+    <item name="android:textSize">@dimen/text1</item>
+    <item name="android:typeface">monospace</item>
+    <item name="android:padding">@dimen/padding2</item>
+  </style>
+
+  <style name="Number" parent="@style/Text">
+    <item name="android:layout_width">@dimen/width3</item>
+    <item name="android:layout_height">@dimen/height2</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:textSize">@dimen/text1</item>
+  </style>
+
+  <style name="NumberNoClick"  parent="@style/Text">
+    <item name="android:layout_width">@dimen/width3</item>
+    <item name="android:layout_height">@dimen/height2</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:textSize">@dimen/text1</item>
+  </style>
+  <style name="TextDesc">
+    <item name="android:layout_width">@dimen/width3</item>
+    <item name="android:layout_height">@dimen/height2</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:textSize">@dimen/text1</item>
+  </style>
+  <style name="Label">
+    <item name="android:layout_width">@dimen/width2</item>
+    <item name="android:layout_height">@dimen/height2</item>
+    <item name="android:textSize">@dimen/text1</item>
+    <item name="android:singleLine">true</item>
+  </style>
+  <style name="LabelDummy">
+    <item name="android:layout_width">@dimen/width2</item>
+    <item name="android:layout_height">@dimen/height2</item>
+  </style>
+  <style name="Grid">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:gravity">center</item>
+    <!--<item name="android:background">@color/colorGridHeaderBackground</item>-->
+    
+  </style>
+
+
+
+  <style name="GridHeader">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/height1</item>
+    <item name="android:clickable">false</item>
+    <item name="android:focusable">false</item>
+    <item name="android:focusableInTouchMode">false</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:gravity">center</item>
+
+  </style>
+
+  <style name="GridHeaderText">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/height1</item>
+    <item name="android:clickable">false</item>
+    <item name="android:focusable">false</item>
+    <item name="android:focusableInTouchMode">false</item>
+    <item name="android:textSize">@dimen/text1</item>
+    <item name="android:gravity">center</item>
+
+  </style>
+
+  <style name="GridCell">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/height1</item>
+    <item name="android:clickable">false</item>
+    <item name="android:focusable">false</item>
+    <item name="android:focusableInTouchMode">false</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:gravity">center</item>
+
+  </style>
+
+  <style name="GridCellText">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/height1</item>
+    <item name="android:clickable">false</item>
+    <item name="android:focusable">false</item>
+    <item name="android:focusableInTouchMode">false</item>
+    <item name="android:textSize">@dimen/text1</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+
+
+  <style name="Tree">
+
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <!-- <item name="android:groupIndicator">@android:color/transparent</item> -->
+  </style>
+
+  <style name="TreeGroup">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:clickable">false</item>
+    <item name="android:focusable">false</item>
+    <item name="android:focusableInTouchMode">false</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:background">#ff333333</item>
+  </style>
+  <style name="TreeGroupText">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:clickable">false</item>
+    <item name="android:focusable">false</item>
+    <item name="android:focusableInTouchMode">false</item>
+    <item name="android:textSize">@dimen/text3</item>
+    <item name="android:gravity">left|center</item>
+    <item name="android:layout_margin">@dimen/padding1</item>
+    <item name="android:paddingTop">@dimen/padding2</item>
+    <item name="android:paddingBottom">@dimen/padding2</item>
+    <item name="android:paddingLeft">@dimen/width1</item>
+  </style>
+  <style name="TreeItem">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:clickable">false</item>
+    <item name="android:focusable">false</item>
+    <item name="android:focusableInTouchMode">false</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:background">#ff555555</item>
+  </style>
+  <style name="TreeItemText">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:clickable">false</item>
+    <item name="android:focusable">false</item>
+    <item name="android:focusableInTouchMode">false</item>
+    <item name="android:textSize">@dimen/text3</item>
+    <item name="android:gravity">left|center</item>
+    <item name="android:layout_margin">@dimen/padding1</item>
+    <item name="android:paddingTop">@dimen/padding2</item>
+    <item name="android:paddingBottom">@dimen/padding2</item>
+    <item name="android:paddingLeft">@dimen/width1</item>
+  </style>
+
+</resources>

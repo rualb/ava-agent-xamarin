@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/cPanelMain"
+    p1:tag="name::cPanelMain">
+    <ExpandableListView
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/cTree"
+        p1:tag="type::tree name::cTree2"
+        p1:layout_weight="1"
+        p1:visibility="gone" />
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/cPanelMenu"
+        p1:layout_weight="1"
+        p1:minHeight="25px" />
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:id="@+id/relativeLayout1"
+        p1:layout_height="wrap_content">
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:id="@+id/linearLayout3"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:layout_centerInParent="true">
+            <Button
+                p1:text="T_CLOSE"
+                p1:id="@+id/cBtnCancel"
+                style="@style/Button"
+                p1:visibility="invisible" />
+        </LinearLayout>
+        <Button
+            p1:id="@+id/cBtnMenu"
+            style="@style/ButtonClick"
+            p1:layout_alignParentRight="true"
+            p1:background="@drawable/ic_action_overflow"
+            p1:text=" " />
+    </RelativeLayout>
+</LinearLayout>

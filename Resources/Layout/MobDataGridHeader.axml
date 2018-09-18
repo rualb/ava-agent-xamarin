@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    style="@style/GridHeader"
+    android:id="@+id/cPanel">
+    <TextView
+        android:text="Header"
+        android:id="@+id/cText"
+        android:shadowColor="#fff9ea14"
+        style="@style/GridHeaderText" />
+</LinearLayout>
