@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PatternSqlBuilder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilder.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderCashTrans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuildercashtrans.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderClient" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderclient.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderClientGenStat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderclientgenstat.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderClientPayTrans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderclientpaytrans.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderClientTrans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderclienttrans.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderClientTransClientFiltered" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderclienttransclientfiltered.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderCompCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuildercompcard.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderCompCardLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuildercompcardline.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderCurrencyList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuildercurrencylist.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderDailyExchanges" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderdailyexchanges.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderDep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderdep.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderDiv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderdiv.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderDocFirm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderdocfirm.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderDocNum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderdocnum.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderDocPer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderdocper.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderDynClientGroupGenStat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderdynclientgroupgenstat.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderFack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderfack.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderFirm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderfirm.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderFirmParams" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderfirmparams.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderInvoice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderinvoice.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderInvoiceClientFiltered" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderinvoiceclientfiltered.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderMarkingCodes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuildermarkingcodes.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderMaterial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuildermaterial.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderMaterialGenStat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuildermaterialgenstat.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderMaterialTrans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuildermaterialtrans.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderMaterialUnits" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuildermaterialunits.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderMaterialUnitsBarcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuildermaterialunitsbarcode.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderMatsIO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuildermatsio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderOrder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderorder.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderOrderClientFiltered" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderorderclientfiltered.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderOrderTrans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderordertrans.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderPeriod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderperiod.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderPriceList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderpricelist.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderSalesMan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuildersalesman.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderSalesManClientRel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuildersalesmanclientrel.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderSlip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderslip.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderTradingGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuildertradinggroup.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderUnits" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderunits.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderUnitSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderunitset.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderuser.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PatternSqlBuilderWarehouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>patternsqlbuilderwarehouse.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+</root>
